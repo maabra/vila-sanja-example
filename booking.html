@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay – Vila Sanja, Premantura</title>
+    <link rel="icon" type="image/png" href="images/depo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header id="site-header">
+    <a href="index.html" class="header-logo">
+        <img src="images/depo/logo.png" alt="Vila Sanja Logo" style="height:42px;width:auto;">
+        <div class="logo">Vila Sanja</div>
+    </a>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="dropdown">
+                <a href="accommodations.html" class="dropdown-toggle" data-i18n="nav.accom">Accommodations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="duplex-apartment.html" data-i18n="nav.duplex">Duplex Apartment</a></li>
+                    <li><a href="one-bedroom.html" data-i18n="nav.apartment">Apartment</a></li>
+                    <li><a href="room.html" data-i18n="nav.room">Room</a></li>
+                </ul>
+            </li>
+            <li><a href="reviews.html" data-i18n="nav.reviews">Reviews</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle lang-toggle" id="lang-current"><i class="fa-solid fa-globe" style="font-size:0.85em;margin-right:4px;opacity:0.85;"></i>EN</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="lang-option" data-lang="en">EN – English</a></li>
+                    <li><a href="#" class="lang-option" data-lang="hr">HR – Hrvatski</a></li>
+                    <li><a href="#" class="lang-option" data-lang="de">DE – Deutsch</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-mini">
+        <h1 data-i18n="bk.hero">Book Your Stay</h1>
+    </section>
+
+    <div class="booking-wrap">
+        <div style="text-align:center;">
+            <div class="divider divider-c"></div>
+            <div class="section-title" data-i18n="bk.title">How would you like to book?</div>
+            <p style="color:var(--text-lt);font-size:1.05rem;margin:8px 0 0 0;" data-i18n="bk.sub">Choose the option that suits you best – we're happy to accommodate you either way!</p>
+        </div>
+
+        <div class="booking-options">
+            <!-- Option 1: Booking.com -->
+            <div class="booking-card">
+                <div class="booking-card-icon" style="color:var(--sea);">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h2 data-i18n="bk.online.title">Book via Booking.com</h2>
+                <p data-i18n="bk.online.desc">Secure, instant online booking. Manage your reservation anytime.</p>
+                <ul>
+                    <li data-i18n="bk.online.l1">Instant confirmation</li>
+                    <li data-i18n="bk.online.l2">Secure payment</li>
+                    <li data-i18n="bk.online.l3">Easy cancellation</li>
+                    <li data-i18n="bk.online.l4">Best available rates</li>
+                </ul>
+                <a href="https://www.booking.com/hotel/hr/vila-sanja.hr.html" class="cta-button sea" target="_blank" data-i18n="bk.online.btn">Book on Booking.com</a>
+            </div>
+
+            <!-- Option 2: Direct Contact -->
+            <div class="booking-card booking-coral">
+                <div class="booking-card-icon" style="color:var(--coral);">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <h2 data-i18n="bk.direct.title">Contact Us Directly</h2>
+                <p data-i18n="bk.direct.desc">Prefer a personal touch? Reach out for special requests, flexible dates, or any questions.</p>
+                <ul>
+                    <li data-i18n="bk.direct.l1">Personal service</li>
+                    <li data-i18n="bk.direct.l2">Flexible arrangements</li>
+                    <li data-i18n="bk.direct.l3">Special requests welcome</li>
+                    <li data-i18n="bk.direct.l4">We speak EN &amp; DE</li>
+                </ul>
+                <div class="booking-contact-info">
+                    <p><i class="fa-solid fa-mobile-screen" style="color:var(--coral);width:20px;"></i> <a href="tel:+385955445102">+385 95 544 5102</a></p>
+                    <p><i class="fa-solid fa-mobile-screen" style="color:var(--coral);width:20px;"></i> <a href="tel:+385955152150">+385 95 515 2150</a></p>
+                    <p><i class="fa-solid fa-phone" style="color:var(--coral);width:20px;"></i> <a href="tel:+38552817426">+385 52 817 426</a></p>
+                    <p><i class="fa-solid fa-envelope" style="color:var(--coral);width:20px;"></i> <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a></p>
+                </div>
+                <a href="contact.html" class="cta-button" data-i18n="bk.direct.btn">View Contact Page</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <strong>Vila Sanja</strong>, Selo Varoš 70 D, 52100 Premantura, Croatia<br>
+        Mob: <a href="tel:+385955445102">+385 95 544 5102</a> / <a href="tel:+385955152150">+385 95 515 2150</a><br>
+        Tel: <a href="tel:+38552817426">+385 52 817 426</a><br>
+        Email: <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a> &nbsp;|&nbsp; PO 35815982997
+    </div>
+    <div class="footer-icons">
+        <a href="https://www.booking.com/hotel/hr/vila-sanja.hr.html" target="_blank" class="f-icon f-b" aria-label="Booking.com">B</a>
+        <a href="https://goo.gl/maps/4n1o6Q5zZ8w6j7yF8" target="_blank" class="f-icon f-g" aria-label="Google Maps">G</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vila Sanja. All rights reserved.</div>
+</footer>
+
+<script src="translations.js"></script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    }
+});
+document.querySelectorAll('nav a:not(.lang-option):not(.lang-toggle)').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
+</script>
+</body>
+</html>
