@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Vila Sanja, Premantura</title>
+    <title>Nearby Towns – Premantura | Vila Sanja</title>
     <link rel="icon" type="image/png" href="images/depo/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .section-nav-breadcrumb {
+            font-size: 0.88rem;
+            color: var(--text-lt, #888);
+            margin-bottom: 8px;
+        }
+        .section-nav-breadcrumb a {
+            color: var(--sea-deep, #1a5276);
+            text-decoration: none;
+        }
+        .section-nav-breadcrumb a:hover { text-decoration: underline; }
+        .coming-soon-box {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-lt);
+        }
+        .coming-soon-box i {
+            font-size: 3.5rem;
+            color: var(--coral);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .coming-soon-box h2 {
+            color: var(--sea-deep);
+            margin: 0 0 12px;
+        }
+        .coming-soon-box p {
+            max-width: 480px;
+            margin: 0 auto 24px;
+            line-height: 1.7;
+        }
+    </style>
 </head>
 <body>
 <div class="deco deco-l" aria-hidden="true"></div>
@@ -32,15 +64,15 @@
             <li><a href="reviews.html" data-i18n="nav.reviews">Reviews</a></li>
             <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
             <li class="dropdown">
-                <a href="premantura.html" class="dropdown-toggle" data-i18n="nav.nearus">Near Us</a>
+                <a href="premantura.html" class="dropdown-toggle active" data-i18n="nav.nearus">Near Us</a>
                 <ul class="dropdown-menu">
                     <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
                     <li><a href="premantura-attractions.html" data-i18n="nav.attr">Local Attractions</a></li>
-                    <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
+                    <li><a href="premantura-towns.html" class="active" data-i18n="nav.towns">Nearby Towns</a></li>
                 </ul>
             </li>
             <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
-            <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact Us</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle lang-toggle" id="lang-current"><i class="fa-solid fa-globe" style="font-size:0.85em;margin-right:4px;opacity:0.85;"></i>EN</a>
                 <ul class="dropdown-menu">
@@ -55,58 +87,24 @@
 
 <main>
     <section class="hero-mini">
-        <h1 data-i18n="ct.hero">Contact Us</h1>
+        <h1 data-i18n="twn.hero">Nearby Towns</h1>
     </section>
 
-    <div class="contact-wrap">
-        <div class="divider"></div>
-        <div class="section-title" style="margin-bottom:8px;" data-i18n="ct.title">Get in touch</div>
-        <p style="color:var(--text-lt);margin:0 0 32px 0;font-size:1.05rem;" data-i18n="ct.sub">We'd love to hear from you. Reach out any time!</p>
-
-        <!-- Contact info -->
-        <div class="contact-block">
-            <h2><i class="fa-solid fa-address-card" style="margin-right:6px;"></i><span data-i18n="ct.block1">Vila Sanja</span></h2>
-            <p><i class="fa-solid fa-location-dot" style="color:var(--coral);width:20px;"></i> Selo Varoš 70 D, 52100 Premantura, Croatia</p>
-            <p><strong data-i18n="ct.owners">Owners:</strong> Sanja Volner &amp; Matej Abramović</p>
-            <p><i class="fa-solid fa-mobile-screen" style="color:var(--coral);width:20px;"></i>
-                <a href="tel:+385955445102">+385 95 544 5102</a> / <a href="tel:+385955152150">+385 95 515 2150</a>
-            </p>
-            <p><i class="fa-solid fa-phone" style="color:var(--coral);width:20px;"></i>
-                <a href="tel:+38552817426">+385 52 817 426</a>
-            </p>
-            <p><i class="fa-solid fa-envelope" style="color:var(--coral);width:20px;"></i>
-                <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a>
-            </p>
-            <p style="color:var(--text-lt);font-size:0.92rem;">PO 35815982997</p>
-        </div>
-
-        <!-- Map -->
-        <div class="contact-block">
-            <h2><i class="fa-solid fa-map-location-dot" style="margin-right:6px;"></i><span data-i18n="ct.block2">Location</span></h2>
-            <p>Selo Varoš 70 D, 52100 Premantura, Croatia</p>
-            <div style="margin-top:14px;border-radius:var(--radius);overflow:hidden;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.066456110439!2d13.90932657757006!3d44.79983427107091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47632b5b2e19cd49%3A0xd82536d40695dc5!2sVila%20Sanja!5e0!3m2!1sen!2shr!4v1747156662894!5m2!1sen!2shr"
-                    width="100%" height="320" style="border:0;display:block;"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section">
+        <div class="inner">
+            <div class="section-nav-breadcrumb">
+                <a href="premantura.html">Premantura</a> &rsaquo; <span data-i18n="twn.hero">Nearby Towns</span>
+            </div>
+            <div class="coming-soon-box">
+                <i class="fa-solid fa-city"></i>
+                <h2 data-i18n="twn.soon.h2">More content coming soon</h2>
+                <p data-i18n="twn.soon.p">We are preparing a guide to the best towns within easy reach of Premantura — including Pula (Roman amphitheater, 20 min), Rovinj (45 min), Poreč (1 hr), Motovun and other Istrian hill towns.</p>
+                <a href="premantura.html" class="cta-button sea" data-i18n="twn.back">&larr; Back to Premantura</a>
+                &nbsp;
+                <a href="premantura-beaches.html" class="cta-button" data-i18n="twn.bch.btn">Explore the Beaches</a>
             </div>
         </div>
-
-        <!-- Why contact -->
-        <div class="contact-block">
-            <h2><i class="fa-solid fa-circle-info" style="margin-right:6px;"></i><span data-i18n="ct.block3">Why stay with us?</span></h2>
-            <ul>
-                <li data-i18n="ct.why1">Family atmosphere and personal approach to every guest</li>
-                <li data-i18n="ct.why2">Peaceful location, close to beaches and Cape Kamenjak Nature Park</li>
-                <li data-i18n="ct.why3">Free private parking and WiFi</li>
-                <li data-i18n="ct.why4">Terrace and outdoor area to relax</li>
-                <li data-i18n="ct.why5">Ideal for families, couples, and nature lovers</li>
-                <li data-i18n="ct.why6">Hosts speak German and English</li>
-            </ul>
-            <p style="margin-top:12px;" data-i18n="ct.why.p">Contact us today and book your holiday in Premantura!</p>
-        </div>
-    </div>
+    </section>
 </main>
 
 <a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>

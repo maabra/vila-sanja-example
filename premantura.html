@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Premantura – Vila Sanja</title>
+    <link rel="icon" type="image/png" href="images/depo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .preman-hub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 36px;
+        }
+        .preman-hub-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 18px rgba(30,80,120,0.09);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .preman-hub-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(30,80,120,0.16);
+        }
+        .preman-hub-card .hub-icon {
+            background: var(--sea-deep, #1a5276);
+            color: #fff;
+            font-size: 2.4rem;
+            padding: 36px 0 28px;
+            text-align: center;
+        }
+        .preman-hub-card .hub-body {
+            padding: 24px 22px 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .preman-hub-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.18rem;
+            color: var(--sea-deep, #1a5276);
+        }
+        .preman-hub-card p {
+            color: var(--text-lt, #666);
+            font-size: 0.96rem;
+            line-height: 1.65;
+            margin: 0 0 18px;
+            flex: 1;
+        }
+        .preman-intro {
+            max-width: 760px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--text, #333);
+            font-size: 1.05rem;
+            line-height: 1.75;
+        }
+    </style>
+</head>
+<body>
+<div class="deco deco-l" aria-hidden="true"></div>
+<div class="deco deco-r" aria-hidden="true"></div>
+
+<header id="site-header">
+    <a href="index.html" class="header-logo">
+        <img src="images/depo/logo.png" alt="Vila Sanja Logo" style="height:42px;width:auto;">
+        <div class="logo">Vila Sanja</div>
+    </a>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="dropdown">
+                <a href="accommodations.html" class="dropdown-toggle" data-i18n="nav.accom">Accommodations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="duplex-apartment.html" data-i18n="nav.duplex">Duplex Apartment</a></li>
+                    <li><a href="one-bedroom.html" data-i18n="nav.apartment">Apartment</a></li>
+                    <li><a href="room.html" data-i18n="nav.room">Room</a></li>
+                </ul>
+            </li>
+            <li><a href="reviews.html" data-i18n="nav.reviews">Reviews</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li class="dropdown">
+                <a href="premantura.html" class="dropdown-toggle active" data-i18n="nav.nearus">Near Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
+                    <li><a href="premantura-attractions.html" data-i18n="nav.attr">Local Attractions</a></li>
+                    <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
+                </ul>
+            </li>
+            <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle lang-toggle" id="lang-current"><i class="fa-solid fa-globe" style="font-size:0.85em;margin-right:4px;opacity:0.85;"></i>EN</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="lang-option" data-lang="en">EN – English</a></li>
+                    <li><a href="#" class="lang-option" data-lang="hr">HR – Hrvatski</a></li>
+                    <li><a href="#" class="lang-option" data-lang="de">DE – Deutsch</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-mini">
+        <h1 data-i18n="prem.hero">Premantura &amp; Surroundings</h1>
+    </section>
+
+    <section class="section">
+        <div class="inner">
+            <div class="divider divider-c"></div>
+            <div class="preman-intro">
+                <p data-i18n="prem.intro.p1">Premantura is a small, charming fishing village at the very tip of the Istrian peninsula, surrounded by the crystal-clear waters of the Adriatic. It is home to Cape Kamenjak — one of the most beautiful protected nature parks in Croatia — and offers an unhurried Mediterranean lifestyle far from the crowds.</p>
+                <p style="margin-top:14px;" data-i18n="prem.intro.p2">Explore what makes Premantura and its surroundings so special:</p>
+            </div>
+
+            <div class="preman-hub-grid">
+                <div class="preman-hub-card">
+                    <div class="hub-icon">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <div class="hub-body">
+                        <h3 data-i18n="prem.card.beach.title">Beaches at Cape Kamenjak</h3>
+                        <p data-i18n="prem.card.beach.desc">Over 30 hidden coves, crystal-clear water, cliff jumping, water sports, and the legendary Safari Bar. Everything you need for a perfect beach day.</p>
+                        <a href="premantura-beaches.html" class="cta-button sea" data-i18n="prem.card.beach.btn">Explore beaches &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="preman-hub-card">
+                    <div class="hub-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <div class="hub-body">
+                        <h3 data-i18n="prem.card.attr.title">Local Attractions</h3>
+                        <p data-i18n="prem.card.attr.desc">Ancient ruins, medieval fortresses, dinosaur trails, aqua parks and more — Premantura and the Pula riviera are packed with things to see and do.</p>
+                        <a href="premantura-attractions.html" class="cta-button sea" data-i18n="prem.card.attr.btn">See attractions &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="preman-hub-card">
+                    <div class="hub-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="hub-body">
+                        <h3 data-i18n="prem.card.towns.title">Nearby Towns</h3>
+                        <p data-i18n="prem.card.towns.desc">From the Roman splendor of Pula to the hilltop magic of Rovinj and Motovun — discover the best of Istria within easy driving distance.</p>
+                        <a href="premantura-towns.html" class="cta-button sea" data-i18n="prem.card.towns.btn">Discover towns &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick facts strip -->
+    <div class="stats-bar">
+        <div class="stat-item"><span class="stat-num">30+</span><span class="stat-lbl" data-i18n="prem.stat1">Hidden coves</span></div>
+        <div class="stat-item"><span class="stat-num">5 km</span><span class="stat-lbl" data-i18n="prem.stat2">Cape Kamenjak length</span></div>
+        <div class="stat-item"><span class="stat-num">14 km</span><span class="stat-lbl" data-i18n="prem.stat3">From Pula airport</span></div>
+        <div class="stat-item"><span class="stat-num">30+</span><span class="stat-lbl" data-i18n="prem.stat4">Orchid species in park</span></div>
+    </div>
+
+    <section class="section-alt">
+        <div class="inner">
+            <div class="page-section-title" style="font-size:1.3rem;" data-i18n="prem.about.title">About the Village</div>
+            <div class="about-flex" style="gap:32px;align-items:flex-start;">
+                <div style="flex:1;min-width:240px;">
+                    <p style="color:var(--text);line-height:1.8;margin:0 0 14px;" data-i18n="prem.about.p1">Premantura sits at the southernmost point of Istria, just 14 km from Pula International Airport. The village has a population of around 400 and retains the quiet, authentic atmosphere of a traditional Croatian coastal settlement — cobblestone lanes, fishing boats, and fresh seafood.</p>
+                    <p style="color:var(--text);line-height:1.8;margin:0 0 14px;" data-i18n="prem.about.p2">The gateway to Cape Kamenjak Nature Park is just a short drive or cycle ride away, making Premantura the ideal base for nature lovers, beach-goers, and those who want to explore Istria at their own pace.</p>
+                    <p style="color:var(--text-lt);line-height:1.8;margin:0;font-size:0.95rem;" data-i18n="prem.about.p3">Vila Sanja is located right in the village center — perfectly placed for all of this and more.</p>
+                </div>
+                <div style="flex:1;min-width:240px;">
+                    <ul style="list-style:none;padding:0;margin:0;line-height:2;">
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk1">Supermarket, bakery &amp; pharmacy in village</span></li>
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk2">Restaurants and cafés along the seafront</span></li>
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk3">Pula city center ~20 min by car</span></li>
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk4">Cape Kamenjak entrance ~5 min by car</span></li>
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk5">Rovinj ~45 min, Poreč ~1 hr by car</span></li>
+                        <li><i class="fa-solid fa-check" style="color:var(--coral);margin-right:9px;"></i><span data-i18n="prem.chk6">Quiet &amp; safe — perfect for families</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
+
+<footer>
+    <div>
+        <strong>Vila Sanja</strong>, Selo Varoš 70 D, 52100 Premantura, Croatia<br>
+        Mob: <a href="tel:+385955445102">+385 95 544 5102</a> / <a href="tel:+385955152150">+385 95 515 2150</a><br>
+        Tel: <a href="tel:+38552817426">+385 52 817 426</a><br>
+        Email: <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a> &nbsp;|&nbsp; PO 35815982997
+    </div>
+    <div class="footer-icons">
+        <a href="https://goo.gl/maps/4n1o6Q5zZ8w6j7yF8" target="_blank" class="f-icon f-g" aria-label="Google Maps">G</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vila Sanja. All rights reserved.</div>
+</footer>
+
+<script src="translations.js"></script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    }
+});
+document.querySelectorAll('nav a:not(.lang-option):not(.lang-toggle)').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
+</script>
+</body>
+</html>

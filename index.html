@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+<div class="deco deco-l" aria-hidden="true"></div>
+<div class="deco deco-r" aria-hidden="true"></div>
 
 <header id="site-header">
     <a href="index.html" class="header-logo">
@@ -29,6 +31,14 @@
             </li>
             <li><a href="reviews.html" data-i18n="nav.reviews">Reviews</a></li>
             <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li class="dropdown">
+                <a href="premantura.html" class="dropdown-toggle" data-i18n="nav.nearus">Near Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
+                    <li><a href="premantura-attractions.html" data-i18n="nav.attr">Local Attractions</a></li>
+                    <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
+                </ul>
+            </li>
             <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
             <li class="dropdown">
@@ -50,7 +60,7 @@
             <h1 data-i18n="idx.hero.title">Vila Sanja</h1>
             <h2 data-i18n="idx.hero.title">Your oasis of calm on the Adriatic</h2>
             <p data-i18n="idx.hero.desc">Comfortable apartments and rooms in Premantura, Istria. Air conditioning, private balconies, free WiFi and parking. Just minutes from the sea and Cape Kamenjak.</p>
-            <a href="booking.html" class="cta-button" data-i18n="idx.hero.cta">Book your holiday</a>
+            <a href="contact.html" class="cta-button" data-i18n="idx.hero.cta">Book your holiday</a>
         </div>
         <div class="scroll-hint" onclick="document.getElementById('about-section').scrollIntoView({behavior:'smooth'})">
             <span data-i18n="idx.hero.scroll">Scroll down</span>
@@ -107,7 +117,7 @@
                     <img src="images/depo/sunset.jpg" alt="Happy guests at Vila Sanja" style="filter:brightness(0.92) saturate(1.1);">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-star" style="color:var(--sun);margin-right:7px;"></i><span data-i18n="idx.card.rev.title">Guests Love Us</span></div>
-                        <div class="card-desc" data-i18n="idx.card.rev.desc">100+ happy guests and an 8.1 rating. Our visitors keep coming back – read what they have to say!</div>
+                        <div class="card-desc" data-i18n="idx.card.rev.desc">100+ happy guests and an overall rating of 4.4/5. Our visitors keep coming back – read what they have to say!</div>
                         <a href="reviews.html" class="cta-button" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.rev.btn">Read reviews</a>
                     </div>
                 </div>
@@ -120,7 +130,7 @@
         <div class="stat-item"><span class="stat-num">3</span><span class="stat-lbl" data-i18n="idx.stat.types">Accommodation types</span></div>
         <div class="stat-item"><span class="stat-num">100+</span><span class="stat-lbl" data-i18n="idx.stat.guests">Happy guests</span></div>
         <div class="stat-item"><span class="stat-num">300m</span><span class="stat-lbl" data-i18n="idx.stat.dist">From village center</span></div>
-        <div class="stat-item"><span class="stat-num">8.1</span><span class="stat-lbl" data-i18n="idx.stat.rating">Guest rating</span></div>
+        <div class="stat-item"><span class="stat-num" id="guest-rating-value">4.4<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 5</span></span><span class="stat-lbl" data-i18n="idx.stat.rating">Guest rating</span></div>
     </div>
 
     <!-- WHAT GUESTS SAY -->
@@ -180,7 +190,7 @@
     </section>
 </main>
 
-<a href="booking.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
+<a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
 
 <footer>
     <div>
@@ -190,7 +200,6 @@
         Email: <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a> &nbsp;|&nbsp; PO 35815982997
     </div>
     <div class="footer-icons">
-        <a href="https://www.booking.com/hotel/hr/vila-sanja.hr.html" target="_blank" class="f-icon f-b" aria-label="Booking.com">B</a>
         <a href="https://goo.gl/maps/4n1o6Q5zZ8w6j7yF8" target="_blank" class="f-icon f-g" aria-label="Google Maps">G</a>
     </div>
     <div class="footer-copy">&copy; 2025 Vila Sanja. All rights reserved.</div>

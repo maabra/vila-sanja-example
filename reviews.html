@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+<div class="deco deco-l" aria-hidden="true"></div>
+<div class="deco deco-r" aria-hidden="true"></div>
 
 <header id="site-header">
     <a href="index.html" class="header-logo">
@@ -29,6 +31,14 @@
             </li>
             <li><a href="reviews.html" class="active" data-i18n="nav.reviews">Reviews</a></li>
             <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li class="dropdown">
+                <a href="premantura.html" class="dropdown-toggle" data-i18n="nav.nearus">Near Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
+                    <li><a href="premantura-attractions.html" data-i18n="nav.attr">Local Attractions</a></li>
+                    <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
+                </ul>
+            </li>
             <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
             <li class="dropdown">
@@ -51,9 +61,9 @@
     <!-- Stats bar -->
     <div class="stats-bar">
         <div class="stat-item"><span class="stat-num">100+</span><span class="stat-lbl" data-i18n="rev.stat1">Happy guests</span></div>
-        <div class="stat-item"><span class="stat-num">8.1</span><span class="stat-lbl" data-i18n="rev.stat2">Overall rating</span></div>
-        <div class="stat-item"><span class="stat-num">9.0</span><span class="stat-lbl" data-i18n="rev.stat3">Location score</span></div>
-        <div class="stat-item"><span class="stat-num">8.5</span><span class="stat-lbl" data-i18n="rev.stat4">Cleanliness</span></div>
+        <div class="stat-item"><span class="stat-num" id="guest-rating-value">4.4<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 5</span></span><span class="stat-lbl" data-i18n="rev.stat2">Overall rating</span></div>
+        <div class="stat-item"><span class="stat-num">9.0<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 10</span></span><span class="stat-lbl" data-i18n="rev.stat3">Location score</span></div>
+        <div class="stat-item"><span class="stat-num">8.5<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 10</span></span><span class="stat-lbl" data-i18n="rev.stat4">Cleanliness</span></div>
     </div>
 
     <section class="section" style="text-align:center;">
@@ -69,12 +79,12 @@
         <div class="inner" style="text-align:center;">
             <div class="section-title" data-i18n="rev.cta.title">Ready to make your own memories?</div>
             <p class="section-sub" data-i18n="rev.cta.sub">Join hundreds of happy guests who chose Vila Sanja for their Istrian holiday.</p>
-            <a href="booking.html" class="cta-button" data-i18n="rev.cta.btn">Book your stay</a>
+            <a href="contact.html" class="cta-button" data-i18n="rev.cta.btn">Book your stay</a>
         </div>
     </section>
 </main>
 
-<a href="booking.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
+<a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
 
 <footer>
     <div>
@@ -84,7 +94,6 @@
         Email: <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a> &nbsp;|&nbsp; PO 35815982997
     </div>
     <div class="footer-icons">
-        <a href="https://www.booking.com/hotel/hr/vila-sanja.hr.html" target="_blank" class="f-icon f-b" aria-label="Booking.com">B</a>
         <a href="https://goo.gl/maps/4n1o6Q5zZ8w6j7yF8" target="_blank" class="f-icon f-g" aria-label="Google Maps">G</a>
     </div>
     <div class="footer-copy">&copy; 2025 Vila Sanja. All rights reserved.</div>

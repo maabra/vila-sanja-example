@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Attractions – Premantura | Vila Sanja</title>
+    <link rel="icon" type="image/png" href="images/depo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .section-nav-breadcrumb { font-size: 0.88rem; color: var(--text-lt, #888); margin-bottom: 8px; }
+        .section-nav-breadcrumb a { color: var(--sea-deep, #1a5276); text-decoration: none; }
+        .section-nav-breadcrumb a:hover { text-decoration: underline; }
+
+        .attr-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 24px;
+        }
+        .attr-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 14px rgba(30,80,120,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .attr-card:hover { transform: translateY(-4px); box-shadow: 0 6px 24px rgba(30,80,120,0.14); }
+        .attr-card .attr-body { padding: 18px 16px 20px; flex: 1; }
+        .attr-card h3 { margin: 0 0 7px; font-size: 1rem; color: var(--sea-deep); font-weight: 700; }
+        .attr-card p  { margin: 0; font-size: 0.88rem; color: var(--text-lt); line-height: 1.6; }
+
+        /* photo placeholder reused from beaches page */
+        .photo-placeholder {
+            background: #ddeaf4;
+            border: 2px dashed #7aaec8;
+            aspect-ratio: 4 / 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            text-align: center;
+            color: #3a6a8a;
+        }
+        .photo-placeholder i { font-size: 2rem; opacity: 0.45; }
+        .photo-placeholder .ph-label { font-family: monospace; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; color: #2c5f7a; line-height: 1.4; }
+        figcaption { margin-top: 8px; font-size: 0.82rem; color: var(--text-lt); font-style: italic; text-align: center; line-height: 1.4; }
+
+        .cat-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 48px 0 4px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--sea-deep);
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--coral);
+        }
+        .cat-heading:first-of-type { margin-top: 28px; }
+        .cat-heading i { color: var(--coral); font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+<div class="deco deco-l" aria-hidden="true"></div>
+<div class="deco deco-r" aria-hidden="true"></div>
+
+<header id="site-header">
+    <a href="index.html" class="header-logo">
+        <img src="images/depo/logo.png" alt="Vila Sanja Logo" style="height:42px;width:auto;">
+        <div class="logo">Vila Sanja</div>
+    </a>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li class="dropdown">
+                <a href="accommodations.html" class="dropdown-toggle" data-i18n="nav.accom">Accommodations</a>
+                <ul class="dropdown-menu">
+                    <li><a href="duplex-apartment.html" data-i18n="nav.duplex">Duplex Apartment</a></li>
+                    <li><a href="one-bedroom.html" data-i18n="nav.apartment">Apartment</a></li>
+                    <li><a href="room.html" data-i18n="nav.room">Room</a></li>
+                </ul>
+            </li>
+            <li><a href="reviews.html" data-i18n="nav.reviews">Reviews</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li class="dropdown">
+                <a href="premantura.html" class="dropdown-toggle active" data-i18n="nav.nearus">Near Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
+                    <li><a href="premantura-attractions.html" class="active" data-i18n="nav.attr">Local Attractions</a></li>
+                    <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
+                </ul>
+            </li>
+            <li><a href="rules.html" data-i18n="nav.rules">Rules</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle lang-toggle" id="lang-current"><i class="fa-solid fa-globe" style="font-size:0.85em;margin-right:4px;opacity:0.85;"></i>EN</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="lang-option" data-lang="en">EN – English</a></li>
+                    <li><a href="#" class="lang-option" data-lang="hr">HR – Hrvatski</a></li>
+                    <li><a href="#" class="lang-option" data-lang="de">DE – Deutsch</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-mini">
+        <h1 data-i18n="atr.hero">Local Attractions</h1>
+    </section>
+
+    <section class="section">
+        <div class="inner">
+            <div class="section-nav-breadcrumb">
+                <a href="premantura.html">Premantura</a> &rsaquo; <span data-i18n="atr.crumb">Local Attractions</span>
+            </div>
+            <p style="color:var(--text);line-height:1.8;max-width:760px;margin:12px 0 0;">
+                Premantura sits just 14 km from Pula — one of Croatia's richest cities for history and culture. Below is a guide to the best things to see and do in the region, from 2,000-year-old Roman monuments to wild nature parks and world-class film festivals.
+            </p>
+
+            <!-- ── ROMAN PULA ── -->
+            <h2 class="cat-heading"><i class="fa-solid fa-monument"></i> <span data-i18n="atr.cat.roman">Roman Pula &amp; Historic Sites</span></h2>
+
+            <!-- Pula Arena — hero card with photo placeholder -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-bottom:28px;">
+                <figure style="margin:0;">
+                    <div class="photo-placeholder" style="aspect-ratio:16/10;">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF PULSKA ARENA]</span>
+                    </div>
+                    <figcaption>Pulska arena — jedan od najočuvanijih rimskih amfiteatara na svijetu.</figcaption>
+                </figure>
+                <div>
+                    <h3 style="font-size:1.25rem;color:var(--sea-deep);margin:0 0 10px;">Pulska arena (amfiteatar)</h3>
+                    <p style="color:var(--text);line-height:1.8;margin:0 0 10px;">One of the six largest Roman amphitheatres in the world and the best preserved in Croatia. Built in the 1st century AD, it seats 23,000 and today hosts the Pula Film Festival and major concerts. A must-see.</p>
+                    <p style="font-size:0.88rem;color:var(--text-lt);"><i class="fa-solid fa-location-dot" style="color:var(--coral);margin-right:5px;"></i>Pula city centre &nbsp;·&nbsp; ~20 min by car</p>
+                </div>
+            </div>
+
+            <div class="attr-grid">
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF FORUM PULA]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Forum</h3>
+                        <p>The central square of Roman Pula, continuously used for 2,000 years. Flanked by the Temple of Augustus and the Town Hall, it's the beating heart of the old city.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF AUGUSTOV HRAM]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Augustov hram</h3>
+                        <p>A remarkably intact Roman temple from the 1st century BC dedicated to the goddess Roma and Emperor Augustus. Located on the Forum.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF SLAVOLUK SERGIJEVACA]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Slavoluk Sergijevaca – Zlatna vrata</h3>
+                        <p>The Arch of the Sergii ("Golden Gate"), a triumphal arch from 29–27 BC at the entrance to the old town. One of the oldest and best preserved Roman arches in the world.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-archway" style="color:var(--coral);margin-right:8px;"></i>Herkulova vrata</h3>
+                        <p>Hercules' Gate — the oldest Roman monument in Pula, dating from the 1st century BC. A single-arched gate with a carved head of Hercules above the arch.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-chess-rook" style="color:var(--coral);margin-right:8px;"></i>Kaštel (Mletačka utvrda)</h3>
+                        <p>The Venetian Fortress built in the 17th century on the site of the original Roman Capitol, offering panoramic views over Pula and the harbour. Houses the Historical Museum of Istria.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-water" style="color:var(--coral);margin-right:8px;"></i>Krstionica Sv. Trojstva</h3>
+                        <p>Baptistery of the Holy Trinity — an early Christian rotunda from the 6th century, one of the finest examples of early Byzantine architecture in Istria.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-shield-halved" style="color:var(--coral);margin-right:8px;"></i>Gradski bedemi i vrata</h3>
+                        <p>The Roman and medieval city walls and gates of Pula, encircling the old town. Several towers and gate passages survive and can be walked along.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── NATURE ── -->
+            <h2 class="cat-heading"><i class="fa-solid fa-leaf"></i> <span data-i18n="atr.cat.nature">Nature &amp; Outdoors</span></h2>
+
+            <div class="attr-grid">
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF OTOČJE BRIJUNI]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Otočje Brijuni <span style="font-size:0.78rem;background:var(--sea-light);color:var(--sea-deep);border-radius:8px;padding:2px 8px;margin-left:6px;font-weight:700;">Nacionalni park</span></h3>
+                        <p>The Brijuni Islands National Park — an archipelago of 14 islands with Roman ruins, a safari park with exotic animals, pristine beaches, and Tito's famous summer residence. Reached by ferry from Fažana.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF VIŽULA]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Vižula</h3>
+                        <p>A scenic peninsula near Medulin with an archaeological park revealing remains of a Roman villa rustica and early Christian basilica, surrounded by walking paths and sea views.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF PARK ŠUMA ZLATNI RT]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Park šuma „Zlatni Rt"</h3>
+                        <p>Golden Cape Forest Park in Rovinj — a beloved coastal forest park with walking and cycling paths through pine and cypress trees, ending at beautiful rocky coves on the Adriatic.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-frog" style="color:var(--coral);margin-right:8px;"></i>Močvara Palud</h3>
+                        <p>Palud Marsh — an ornithological reserve near Rovinj, one of the most important wetland habitats in Croatia. Home to rare birds, dragonflies, and diverse flora. A hidden gem for nature lovers.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-water" style="color:var(--coral);margin-right:8px;"></i>Otoci Dvije Sestrice</h3>
+                        <p>The Two Sisters islands — a pair of small uninhabited islands off the coast near Premantura. A popular destination for boat trips, snorkelling, and peaceful swimming in clear waters.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── HIDDEN GEMS ── -->
+            <h2 class="cat-heading"><i class="fa-solid fa-gem"></i> <span data-i18n="atr.cat.hidden">Hidden Gems</span></h2>
+
+            <div class="attr-grid">
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF KAMENOLOM FANTAZIJA]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Kamenolom Fantazija</h3>
+                        <p>Fantazija Quarry — a dramatic abandoned limestone quarry that has become a unique natural attraction with turquoise water, sheer rock walls, and a surreal landscape perfect for photos and swimming.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="photo-placeholder">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="ph-label">[PHOTO OF DVIGRAD]</span>
+                    </div>
+                    <div class="attr-body">
+                        <h3>Dvigrad</h3>
+                        <p>A remarkably preserved medieval ghost town in central Istria, abandoned in the 17th century. Its towers, walls, and church ruins rise from the forest — one of the most atmospheric sites in Istria.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-castle" style="color:var(--coral);margin-right:8px;"></i>Dvorac na otoku Sv. Andrije</h3>
+                        <p>A romantic ruined castle on St. Andrew's Island, accessible only by boat. The overgrown fortress offers a mystical atmosphere and beautiful views of the surrounding sea and coastline.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── EVENTS ── -->
+            <h2 class="cat-heading"><i class="fa-solid fa-star"></i> <span data-i18n="atr.cat.events">Events &amp; Culture</span></h2>
+
+            <div class="attr-grid">
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-film" style="color:var(--coral);margin-right:8px;"></i>Pula Film Festival</h3>
+                        <p>Croatia's oldest and most prestigious film festival, held every July inside the Pula Arena. Watching a film under the stars in a 2,000-year-old amphitheatre is an unforgettable experience.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-moon" style="color:var(--coral);margin-right:8px;"></i>Pulska noć – ulicama našeg grada</h3>
+                        <p>Pula Night — a popular summer evening event when the old town streets fill with music, performers, food stalls, and culture. A vibrant celebration of the city's heritage.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-utensils" style="color:var(--coral);margin-right:8px;"></i>Istra gourmet</h3>
+                        <p>A celebration of Istrian cuisine — truffles, olive oil, wine, seafood, and local delicacies. Seasonal markets and restaurant events let you taste the best of the Istrian peninsula.</p>
+                    </div>
+                </div>
+                <div class="attr-card">
+                    <div class="attr-body" style="padding-top:20px;">
+                        <h3><i class="fa-solid fa-hands" style="color:var(--coral);margin-right:8px;"></i>Istrian Hand Made</h3>
+                        <p>A craft fair dedicated to local artisans and handmade products from across Istria — jewellery, ceramics, textiles, food products, and traditional crafts. A great place to find authentic souvenirs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:48px;">
+                <a href="premantura.html" class="cta-button sea" data-i18n="atr.back">&larr; Back to Premantura</a>
+                &nbsp;&nbsp;
+                <a href="premantura-beaches.html" class="cta-button" data-i18n="atr.bch.btn">Explore the Beaches</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
+
+<footer>
+    <div>
+        <strong>Vila Sanja</strong>, Selo Varoš 70 D, 52100 Premantura, Croatia<br>
+        Mob: <a href="tel:+385955445102">+385 95 544 5102</a> / <a href="tel:+385955152150">+385 95 515 2150</a><br>
+        Tel: <a href="tel:+38552817426">+385 52 817 426</a><br>
+        Email: <a href="mailto:vila-sanja@hotmail.com">vila-sanja@hotmail.com</a> &nbsp;|&nbsp; PO 35815982997
+    </div>
+    <div class="footer-icons">
+        <a href="https://goo.gl/maps/4n1o6Q5zZ8w6j7yF8" target="_blank" class="f-icon f-g" aria-label="Google Maps">G</a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Vila Sanja. All rights reserved.</div>
+</footer>
+
+<script src="translations.js"></script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    }
+});
+document.querySelectorAll('nav a:not(.lang-option):not(.lang-toggle)').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
+</script>
+</body>
+</html>

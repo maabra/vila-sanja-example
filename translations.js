@@ -37,7 +37,7 @@ const LANG_DATA = {
     'idx.card.rooms.desc': 'Comfortable, air-conditioned units for families, couples, and solo travellers.',
     'idx.card.rooms.btn':  'View all',
     'idx.card.rev.title':  'Guests Love Us',
-    'idx.card.rev.desc':   '100+ happy guests and an 8.1 rating. Our visitors keep coming back – read what they have to say!',
+    'idx.card.rev.desc':   '100+ happy guests and an overall rating of 3.9/5. Our visitors keep coming back – read what they have to say!',
     'idx.card.rev.btn':    'Read reviews',
 
     /* INDEX – stats */
@@ -99,7 +99,7 @@ const LANG_DATA = {
     'abt.tbl.air':     'Nearest Airports',
     'abt.tbl.note':    'Shortest estimated distances on foot or by vehicle; actual distances may differ.',
     'abt.fac.title':   'Facilities at Vila Sanja',
-    'abt.fac.rating':  'Excellent facilities. Guest rating: 8.1',
+    'abt.fac.rating':  'Excellent facilities. Guest rating: 3.9/5',
     'abt.fac.pop':     'Most popular:',
     'abt.fac.t1':  'Great for your stay', 'abt.fac.t2':  'Bathroom',     'abt.fac.t3':  'Bedroom',
     'abt.fac.t4':  'View',               'abt.fac.t5':  'Yard',          'abt.fac.t6':  'Kitchen',
@@ -226,6 +226,70 @@ const LANG_DATA = {
     'rl.faq.a4':      'Prices vary depending on your stay dates, accommodation type, and group size. Check current availability and prices on Booking.com.',
     'rl.faq.q5':      'Is parking available?',
     'rl.faq.a5':      'Yes, free private parking is available on site in the villa\'s courtyard.',
+
+    /* NAV – Near Us */
+    'nav.nearus':   'Near Us',
+    'nav.beaches':  'Beaches',
+    'nav.attr':     'Local Attractions',
+    'nav.towns':    'Nearby Towns',
+
+    /* PREMANTURA hub page */
+    'prem.hero':               'Premantura & Surroundings',
+    'prem.intro.p1':           'Premantura is a small, charming fishing village at the very tip of the Istrian peninsula, surrounded by the crystal-clear waters of the Adriatic. It is home to Cape Kamenjak — one of the most beautiful protected nature parks in Croatia — and offers an unhurried Mediterranean lifestyle far from the crowds.',
+    'prem.intro.p2':           'Explore what makes Premantura and its surroundings so special:',
+    'prem.card.beach.title':   'Beaches at Cape Kamenjak',
+    'prem.card.beach.desc':    'Over 30 hidden coves, crystal-clear water, cliff jumping, water sports, and the legendary Safari Bar. Everything you need for a perfect beach day.',
+    'prem.card.beach.btn':     'Explore beaches →',
+    'prem.card.attr.title':    'Local Attractions',
+    'prem.card.attr.desc':     'Ancient ruins, medieval fortresses, dinosaur trails, aqua parks and more — Premantura and the Pula riviera are packed with things to see and do.',
+    'prem.card.attr.btn':      'See attractions →',
+    'prem.card.towns.title':   'Nearby Towns',
+    'prem.card.towns.desc':    'From the Roman splendor of Pula to the hilltop magic of Rovinj and Motovun — discover the best of Istria within easy driving distance.',
+    'prem.card.towns.btn':     'Discover towns →',
+    'prem.stat1':              'Hidden coves',
+    'prem.stat2':              'Cape Kamenjak length',
+    'prem.stat3':              'From Pula airport',
+    'prem.stat4':              'Orchid species in park',
+    'prem.about.title':        'About the Village',
+    'prem.about.p1':           'Premantura sits at the southernmost point of Istria, just 14 km from Pula International Airport. The village has a population of around 400 and retains the quiet, authentic atmosphere of a traditional Croatian coastal settlement — cobblestone lanes, fishing boats, and fresh seafood.',
+    'prem.about.p2':           'The gateway to Cape Kamenjak Nature Park is just a short drive or cycle ride away, making Premantura the ideal base for nature lovers, beach-goers, and those who want to explore Istria at their own pace.',
+    'prem.about.p3':           'Vila Sanja is located right in the village center — perfectly placed for all of this and more.',
+    'prem.chk1':               'Supermarket, bakery & pharmacy in village',
+    'prem.chk2':               'Restaurants and cafés along the seafront',
+    'prem.chk3':               'Pula city centre ~20 min by car',
+    'prem.chk4':               'Cape Kamenjak entrance ~5 min by car',
+    'prem.chk5':               'Rovinj ~45 min, Poreč ~1 hr by car',
+    'prem.chk6':               'Quiet & safe — perfect for families',
+
+    /* BEACHES page */
+    'bch.hero':      'Beaches at Cape Kamenjak',
+    'bch.crumb':     'Beaches',
+    'bch.intro.h2':  'Rt Kamenjak – Istria\'s Wild Southern Tip',
+    'bch.what.h2':   'What Kind of Beaches to Expect',
+    'bch.high.h2':   'Must-See Highlights',
+    'bch.act.h2':    'Activities & Water Sports',
+    'bch.nat.h2':    'Nature & Wildlife',
+    'bch.tips.h2':   'Practical Tips',
+    'bch.back':      '← Back to Premantura',
+    'bch.cta.btn':   'Contact us to plan your visit',
+
+    /* ATTRACTIONS page */
+    'atr.hero':          'Local Attractions',
+    'atr.crumb':         'Local Attractions',
+    'atr.intro':         'Premantura sits just 14 km from Pula — one of Croatia\'s richest cities for history and culture. Below is a guide to the best things to see and do in the region, from 2,000-year-old Roman monuments to wild nature parks and world-class film festivals.',
+    'atr.cat.roman':     'Roman Pula & Historic Sites',
+    'atr.cat.nature':    'Nature & Outdoors',
+    'atr.cat.hidden':    'Hidden Gems',
+    'atr.cat.events':    'Events & Culture',
+    'atr.back':          '← Back to Premantura',
+    'atr.bch.btn':       'Explore the Beaches',
+
+    /* TOWNS page */
+    'twn.hero':       'Nearby Towns',
+    'twn.soon.h2':    'More content coming soon',
+    'twn.soon.p':     'We are preparing a guide to the best towns within easy reach of Premantura — including Pula (Roman amphitheater, 20 min), Rovinj (45 min), Poreč (1 hr), Motovun and other Istrian hill towns.',
+    'twn.back':       '← Back to Premantura',
+    'twn.bch.btn':    'Explore the Beaches',
 
     /* BOOKING page */
     'bk.hero':         'Book Your Stay',
@@ -458,6 +522,70 @@ const LANG_DATA = {
     'rl.faq.q5':      'Je li dostupan parking?',
     'rl.faq.a5':      'Da, besplatni privatni parking dostupan je na licu mjesta u dvorištu vile.',
 
+    /* NAV – Near Us */
+    'nav.nearus':   'U blizini',
+    'nav.beaches':  'Plaže',
+    'nav.attr':     'Lokalne atrakcije',
+    'nav.towns':    'Obližnji gradovi',
+
+    /* PREMANTURA hub page */
+    'prem.hero':               'Premantura i okolica',
+    'prem.intro.p1':           'Premantura je malo, šarmantno ribarsko selo na samom vrhu Istarskog poluotoka, okruženo kristalno čistim vodama Jadrana. Dom je rtu Kamenjak — jednom od najljepših zaštićenih parkova prirode u Hrvatskoj — i nudi opušten mediteranski način života daleko od gužve.',
+    'prem.intro.p2':           'Istražite što Premantura i njezina okolica čine toliko posebnima:',
+    'prem.card.beach.title':   'Plaže na rtu Kamenjak',
+    'prem.card.beach.desc':    'Više od 30 skrivenih uvala, kristalno čista voda, skokovi s litica, vodeni sportovi i legendarni Safari Bar. Sve što trebate za savršen dan na plaži.',
+    'prem.card.beach.btn':     'Istraži plaže →',
+    'prem.card.attr.title':    'Lokalne atrakcije',
+    'prem.card.attr.desc':     'Antički ostatci, srednjovjekovne utvrde, staze dinosaura, aqua parkovi i još mnogo toga — Premantura i rivijera Pule nude bezbroj zanimljivosti.',
+    'prem.card.attr.btn':      'Pogledaj atrakcije →',
+    'prem.card.towns.title':   'Obližnji gradovi',
+    'prem.card.towns.desc':    'Od rimske veličanstvenosti Pule do čarobnih brežuljaka Rovinja i Motovuna — otkrijte sve što Istra nudi na dosegu ruke.',
+    'prem.card.towns.btn':     'Otkrij gradove →',
+    'prem.stat1':              'Skrivenih uvala',
+    'prem.stat2':              'Duljina rta Kamenjak',
+    'prem.stat3':              'Od pulske zračne luke',
+    'prem.stat4':              'Vrsta orhideja u parku',
+    'prem.about.title':        'O selu',
+    'prem.about.p1':           'Premantura leži na najjužnijoj točki Istre, samo 14 km od pulske međunarodne zračne luke. Selo broji oko 400 stanovnika i zadržava tihu, autentičnu atmosferu tradicionalnog hrvatskog priobalnog mjesta — popločane uličice, ribarski brodovi i svježi morski plodovi.',
+    'prem.about.p2':           'Ulaz u Park prirode rt Kamenjak je na kratkom putu automobilom ili biciklom, što Premanturi daje idealnu poziciju za ljubitelje prirode, kupača i sve koji žele istraživati Istru vlastitim tempom.',
+    'prem.about.p3':           'Vila Sanja nalazi se u samom centru sela — savršeno smještena za sve navedeno i još mnogo više.',
+    'prem.chk1':               'Supermarket, pekara i ljekarna u selu',
+    'prem.chk2':               'Restorani i kafići uz obalu mora',
+    'prem.chk3':               'Centar Pule ~20 min automobilom',
+    'prem.chk4':               'Ulaz u rt Kamenjak ~5 min automobilom',
+    'prem.chk5':               'Rovinj ~45 min, Poreč ~1 sat automobilom',
+    'prem.chk6':               'Mirno i sigurno — savršeno za obitelji',
+
+    /* BEACHES page */
+    'bch.hero':      'Plaže rta Kamenjak',
+    'bch.crumb':     'Plaže',
+    'bch.intro.h2':  'Rt Kamenjak – divlji južni vrh Istre',
+    'bch.what.h2':   'Kakve plaže možete očekivati',
+    'bch.high.h2':   'Obavezno posjetiti',
+    'bch.act.h2':    'Aktivnosti i vodni sportovi',
+    'bch.nat.h2':    'Priroda i divlji svijet',
+    'bch.tips.h2':   'Praktični savjeti',
+    'bch.back':      '← Natrag na Premantura',
+    'bch.cta.btn':   'Kontaktirajte nas za planiranje posjeta',
+
+    /* ATTRACTIONS page */
+    'atr.hero':          'Lokalne atrakcije',
+    'atr.crumb':         'Lokalne atrakcije',
+    'atr.intro':         'Premantura se nalazi samo 14 km od Pule — jednog od najobogatijih hrvatskih gradova za povijest i kulturu. U nastavku je vodič kroz najzanimljivije što možete vidjeti i doživjeti u regiji, od rimskih spomenika starih 2.000 godina do divljih parkova prirode i svjetski poznatih filmskih festivala.',
+    'atr.cat.roman':     'Rimska Pula i povijesne znamenitosti',
+    'atr.cat.nature':    'Priroda i vanjske aktivnosti',
+    'atr.cat.hidden':    'Skriveni dragulji',
+    'atr.cat.events':    'Događanja i kultura',
+    'atr.back':          '← Natrag na Premantura',
+    'atr.bch.btn':       'Istraži plaže',
+
+    /* TOWNS page */
+    'twn.hero':       'Obližnji gradovi',
+    'twn.soon.h2':    'Više sadržaja uskoro',
+    'twn.soon.p':     'Pripremamo vodič kroz najbliže gradove do Premanture — uključujući Pulu (rimski amfiteatar, 20 min), Rovinj (45 min), Poreč (1 sat), Motovun i druge istarske gradiće na brdima.',
+    'twn.back':       '← Natrag na Premantura',
+    'twn.bch.btn':    'Istraži plaže',
+
     /* BOOKING page */
     'bk.hero':         'Rezervirajte boravak',
     'bk.title':        'Kako biste željeli rezervirati?',
@@ -689,6 +817,70 @@ const LANG_DATA = {
     'rl.faq.q5':      'Ist Parken möglich?',
     'rl.faq.a5':      'Ja, kostenfreier Privatparkplatz steht auf dem Gelände im Innenhof zur Verfügung.',
 
+    /* NAV – Near Us */
+    'nav.nearus':   'In der Nähe',
+    'nav.beaches':  'Strände',
+    'nav.attr':     'Sehenswürdigkeiten',
+    'nav.towns':    'Nahe Städte',
+
+    /* PREMANTURA hub page */
+    'prem.hero':               'Premantura & Umgebung',
+    'prem.intro.p1':           'Premantura ist ein kleines, charmantes Fischerdorf an der äußersten Spitze der Halbinsel Istrien, umgeben von den kristallklaren Gewässern der Adria. Es ist die Heimat des Kaps Kamenjak — einem der schönsten Naturschutzgebiete Kroatiens — und bietet einen gemächlichen mediterranen Lebensstil abseits des Trubels.',
+    'prem.intro.p2':           'Entdecken Sie, was Premantura und seine Umgebung so besonders macht:',
+    'prem.card.beach.title':   'Strände am Kap Kamenjak',
+    'prem.card.beach.desc':    'Über 30 versteckte Buchten, kristallklares Wasser, Klippenspringen, Wassersport und die legendäre Safari Bar. Alles für einen perfekten Strandtag.',
+    'prem.card.beach.btn':     'Strände entdecken →',
+    'prem.card.attr.title':    'Lokale Sehenswürdigkeiten',
+    'prem.card.attr.desc':     'Antike Ruinen, mittelalterliche Festungen, Dinosaurier-Pfade, Aquaparks und mehr — Premantura und die Pula-Riviera bieten jede Menge zu sehen und zu erleben.',
+    'prem.card.attr.btn':      'Sehenswürdigkeiten ansehen →',
+    'prem.card.towns.title':   'Nahe Städte',
+    'prem.card.towns.desc':    'Von Pulas römischer Pracht bis zur Bergmagie von Rovinj und Motovun — entdecken Sie das Beste Istriens in bequemer Fahrdistanz.',
+    'prem.card.towns.btn':     'Städte entdecken →',
+    'prem.stat1':              'Versteckte Buchten',
+    'prem.stat2':              'Länge Kap Kamenjak',
+    'prem.stat3':              'Vom Flughafen Pula',
+    'prem.stat4':              'Orchideenarten im Park',
+    'prem.about.title':        'Über das Dorf',
+    'prem.about.p1':           'Premantura liegt am südlichsten Punkt Istriens, nur 14 km vom internationalen Flughafen Pula entfernt. Das Dorf hat rund 400 Einwohner und bewahrt die ruhige, authentische Atmosphäre einer traditionellen kroatischen Küstensiedlung — Kopfsteinpflaster, Fischerboote und frische Meeresfrüchte.',
+    'prem.about.p2':           'Der Eingang zum Naturpark Kap Kamenjak ist nur eine kurze Fahrt oder Radtour entfernt, was Premantura zur idealen Basis für Naturliebhaber, Strandbesucher und all jene macht, die Istrien in eigenem Tempo erkunden möchten.',
+    'prem.about.p3':           'Die Vila Sanja befindet sich direkt im Dorfzentrum — ideal gelegen für all das und noch mehr.',
+    'prem.chk1':               'Supermarkt, Bäckerei & Apotheke im Dorf',
+    'prem.chk2':               'Restaurants und Cafés an der Uferpromenade',
+    'prem.chk3':               'Pula Stadtzentrum ~20 Min. mit dem Auto',
+    'prem.chk4':               'Eingang Kap Kamenjak ~5 Min. mit dem Auto',
+    'prem.chk5':               'Rovinj ~45 Min., Poreč ~1 Std. mit dem Auto',
+    'prem.chk6':               'Ruhig & sicher — ideal für Familien',
+
+    /* BEACHES page */
+    'bch.hero':      'Strände am Kap Kamenjak',
+    'bch.crumb':     'Strände',
+    'bch.intro.h2':  'Kap Kamenjak – Istriens wilder Südzipfel',
+    'bch.what.h2':   'Welche Strände erwarten Sie',
+    'bch.high.h2':   'Sehenswerte Highlights',
+    'bch.act.h2':    'Aktivitäten & Wassersport',
+    'bch.nat.h2':    'Natur & Tierwelt',
+    'bch.tips.h2':   'Praktische Tipps',
+    'bch.back':      '← Zurück zu Premantura',
+    'bch.cta.btn':   'Kontaktieren Sie uns zur Reiseplanung',
+
+    /* ATTRACTIONS page */
+    'atr.hero':          'Lokale Sehenswürdigkeiten',
+    'atr.crumb':         'Lokale Sehenswürdigkeiten',
+    'atr.intro':         'Premantura liegt nur 14 km von Pula entfernt — einer der kulturell und historisch reichsten Städte Kroatiens. Hier finden Sie einen Leitfaden zu den besten Sehenswürdigkeiten der Region, von 2.000 Jahre alten römischen Monumenten über wilde Naturparks bis zu weltbekannten Filmfestivals.',
+    'atr.cat.roman':     'Römisches Pula & historische Stätten',
+    'atr.cat.nature':    'Natur & Outdoor',
+    'atr.cat.hidden':    'Versteckte Schätze',
+    'atr.cat.events':    'Events & Kultur',
+    'atr.back':          '← Zurück zu Premantura',
+    'atr.bch.btn':       'Strände erkunden',
+
+    /* TOWNS page */
+    'twn.hero':       'Nahe Städte',
+    'twn.soon.h2':    'Weitere Inhalte folgen bald',
+    'twn.soon.p':     'Wir bereiten einen Leitfaden zu den besten Städten in der Nähe von Premantura vor — darunter Pula (Römisches Amphitheater, 20 Min.), Rovinj (45 Min.), Poreč (1 Std.), Motovun und andere istrische Bergstädte.',
+    'twn.back':       '← Zurück zu Premantura',
+    'twn.bch.btn':    'Strände erkunden',
+
     /* BOOKING page */
     'bk.hero':         'Aufenthalt buchen',
     'bk.title':        'Wie möchten Sie buchen?',
@@ -740,6 +932,75 @@ function applyLang(lang) {
   document.documentElement.lang = lang;
 }
 
+function parseRatingText(text) {
+  if (!text) return null;
+  const regexes = [
+    /(\d+(?:\.\d+)?)\s*(?:\/\s*5|out of 5|stars?)/i,
+    /overall rating(?: is|:)?\s*(\d+(?:\.\d+)?)/i,
+    /rating(?: is|:)?\s*(\d+(?:\.\d+)?)/i,
+  ];
+  for (const rx of regexes) {
+    const match = text.match(rx);
+    if (match) return match[1];
+  }
+  return null;
+}
+
+function attemptUpdateGuestRatingFromElfsight() {
+  const target = document.getElementById('guest-rating-value');
+  if (!target) return false;
+  const app = document.querySelector('.elfsight-app-8ae2e8e5-09be-43ec-853b-b421f041f45c');
+  if (!app) return false;
+
+  const rating = parseRatingText(app.textContent || '');
+  if (rating) {
+    if (target.firstChild && target.firstChild.nodeType === Node.TEXT_NODE) {
+      target.firstChild.textContent = rating;
+    } else {
+      target.insertBefore(document.createTextNode(rating), target.firstChild);
+    }
+    target.dataset.updated = 'true';
+    return true;
+  }
+
+  const iframes = app.querySelectorAll('iframe');
+  for (const iframe of iframes) {
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow?.document;
+      if (!doc?.body) continue;
+      const innerRating = parseRatingText(doc.body.textContent || '');
+      if (innerRating) {
+        if (target.firstChild && target.firstChild.nodeType === Node.TEXT_NODE) {
+          target.firstChild.textContent = innerRating;
+        } else {
+          target.insertBefore(document.createTextNode(innerRating), target.firstChild);
+        }
+        target.dataset.updated = 'true';
+        return true;
+      }
+    } catch (error) {
+      // cross-origin iframe access may be blocked
+    }
+  }
+  return false;
+}
+
+function scheduleGuestRatingUpdate(retries = 12, delay = 500) {
+  if (attemptUpdateGuestRatingFromElfsight()) return;
+  if (retries > 0) {
+    setTimeout(() => scheduleGuestRatingUpdate(retries - 1, delay), delay);
+  }
+}
+
+function observeElfsightRating() {
+  const app = document.querySelector('.elfsight-app-8ae2e8e5-09be-43ec-853b-b421f041f45c');
+  if (!app) return;
+  const observer = new MutationObserver(() => {
+    if (attemptUpdateGuestRatingFromElfsight()) observer.disconnect();
+  });
+  observer.observe(app, { childList: true, subtree: true, characterData: true });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('vs-lang') || 'en';
   applyLang(lang);
@@ -753,6 +1014,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
     });
+
     document.querySelectorAll('.lang-option').forEach(opt => {
       opt.addEventListener('click', e => {
         e.preventDefault();
@@ -764,8 +1026,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mN) mN.classList.remove('active');
       });
     });
+
     document.addEventListener('click', e => {
       if (!langLi.contains(e.target)) langMenu.style.display = 'none';
     });
   }
+
+  scheduleGuestRatingUpdate();
+  observeElfsightRating();
 });
