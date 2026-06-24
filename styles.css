@@ -763,8 +763,8 @@ main {
         88%  { translate:  4px  -4px; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
         100% { translate:  0px   0px; }
     }
-    .deco-l { animation: leaf-sway 14s linear infinite; }
-    .deco-r { animation: leaf-sway 14s linear infinite 3.5s; }
+    .deco-l { animation: leaf-sway 14s linear infinite -4s; }
+    .deco-r { animation: leaf-sway 14s linear infinite -0.5s; }
 }
 
 /* Narrow gutters — hide left first */
@@ -908,9 +908,10 @@ footer a:hover { text-decoration: underline; }
     nav ul li a, nav ul li .dropdown-toggle { width: 100%; box-sizing: border-box; }
     .dropdown-menu {
         position: static; transform: none;
-        width: 100%; margin-left: 16px;
+        width: 100%; margin-left: 0;
         box-shadow: none; border-radius: 8px;
     }
+    .dropdown-menu a { padding-left: 32px; }
     header { padding: 0 20px; }
 }
 
