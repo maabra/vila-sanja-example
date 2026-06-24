@@ -34,7 +34,7 @@
             <li class="dropdown">
                 <a href="premantura.html" class="dropdown-toggle" data-i18n="nav.nearus">Near Us</a>
                 <ul class="dropdown-menu">
-                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Beaches</a></li>
+                    <li><a href="premantura-beaches.html" data-i18n="nav.beaches">Rt Kamenjak</a></li>
                     <li><a href="premantura-attractions.html" data-i18n="nav.attr">Local Attractions</a></li>
                     <li><a href="premantura-towns.html" data-i18n="nav.towns">Nearby Towns</a></li>
                 </ul>
@@ -79,7 +79,13 @@
                 <a href="about.html" class="cta-button sea" style="margin-top:8px;" data-i18n="idx.about.btn">Learn more about us</a>
             </div>
             <div class="about-img">
-                <img src="images/depo/house 1.jpg" alt="Vila Sanja exterior">
+                <div class="slideshow-wrap">
+                    <img id="fronthouse-img" src="images/index/fronthouse.jpg" alt="Vila Sanja exterior">
+                    <div class="slideshow-dots">
+                        <span class="sdot active"></span>
+                        <span class="sdot"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -90,35 +96,37 @@
             <div class="divider divider-c"></div>
             <div class="section-title" data-i18n="idx.feat.title">Why choose Vila Sanja?</div>
             <div class="section-sub" data-i18n="idx.feat.sub">Everything you need for a perfect Istrian holiday</div>
-            <div class="accom-grid" style="margin-top:0;">
-                <div class="card">
-                    <img src="images/depo/house 2.jpg" alt="Vila Sanja Villa">
-                    <div class="card-body">
-                        <div class="card-title"><i class="fa-solid fa-house" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.villa.title">The Villa</span></div>
-                        <div class="card-desc" data-i18n="idx.card.villa.desc">Modern apartments surrounded by greenery, with private parking and a relaxing courtyard.</div>
-                    </div>
-                </div>
+            <div class="accom-grid" style="margin-top:0;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
                 <div class="card">
                     <img src="images/depo/sunset.jpg" alt="Beaches near Vila Sanja">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-umbrella-beach" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.beach.title">Beaches Nearby</span></div>
                         <div class="card-desc" data-i18n="idx.card.beach.desc">Just steps from the Adriatic Sea and the entrance to Cape Kamenjak Nature Park.</div>
+                        <a href="premantura-beaches.html" class="cta-button sea" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.beach.btn">Explore beaches</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/gallery/apt 1.jpg" alt="Apartments and Rooms">
-                    <div class="card-body">
-                        <div class="card-title"><i class="fa-solid fa-bed" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.rooms.title">Rooms &amp; Apartments</span></div>
-                        <div class="card-desc" data-i18n="idx.card.rooms.desc">Comfortable, air-conditioned units for families, couples, and solo travellers.</div>
-                        <a href="accommodations.html" class="cta-button" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.rooms.btn">View all</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/depo/sunset.jpg" alt="Happy guests at Vila Sanja" style="filter:brightness(0.92) saturate(1.1);">
+                    <img src="images/gallery/apt 2.jpg" alt="Happy guests at Vila Sanja">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-star" style="color:var(--sun);margin-right:7px;"></i><span data-i18n="idx.card.rev.title">Guests Love Us</span></div>
                         <div class="card-desc" data-i18n="idx.card.rev.desc">100+ happy guests and an overall rating of 4.4/5. Our visitors keep coming back – read what they have to say!</div>
                         <a href="reviews.html" class="cta-button" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.rev.btn">Read reviews</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/index/owners.jpg" alt="Your hosts Sanja and Matej">
+                    <div class="card-body">
+                        <div class="card-title"><i class="fa-solid fa-heart" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.host.title">Meet Your Hosts</span></div>
+                        <div class="card-desc" data-i18n="idx.card.host.desc">Sanja and Matej welcome you personally, speak German and English, and are always close by to help. Not a hotel – a real home with real people.</div>
+                        <a href="about.html" class="cta-button sea" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.host.btn">About us</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/gallery/room.jpg" alt="Cozy room at Vila Sanja">
+                    <div class="card-body">
+                        <div class="card-title"><i class="fa-solid fa-mug-hot" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.home.title">A Vila, Not a Hotel</span></div>
+                        <div class="card-desc" data-i18n="idx.card.home.desc">Shaded courtyard, garden views, quiet Istrian evenings. A real family property where you can slow down, breathe, and truly arrive.</div>
+                        <a href="accommodations.html" class="cta-button sea" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.rooms.btn">View all</a>
                     </div>
                 </div>
             </div>
@@ -180,7 +188,7 @@
         <div class="divider"></div>
         <div class="section-title" style="margin-bottom:24px;" data-i18n="idx.host.title">Meet your hosts</div>
         <div class="host-box" style="max-width:700px;">
-            <img src="images/gallery/apt 1.jpg" alt="Sanja Volner &amp; Matej Abramović">
+            <img src="images/index/owners.jpg" alt="Sanja Volner &amp; Matej Abramović">
             <div>
                 <h3>Sanja Volner &amp; Matej Abramović</h3>
                 <p data-i18n="idx.host.p1">We are here for you – welcome to our villa! We strive to keep our prices reasonable and make every guest feel at home. You have access to the courtyard, garden, and parking. Peaceful surroundings, everything you need is nearby.</p>
@@ -211,6 +219,17 @@
 
 <script src="translations.js"></script>
 <script>
+(function() {
+    var imgs = ['images/index/fronthouse.jpg', 'images/index/fronthouse2.jpg'];
+    var cur = 0;
+    var el = document.getElementById('fronthouse-img');
+    var dots = document.querySelectorAll('.slideshow-dots .sdot');
+    setInterval(function() {
+        cur = (cur + 1) % imgs.length;
+        el.src = imgs[cur];
+        dots.forEach(function(d, i) { d.classList.toggle('active', i === cur); });
+    }, 5000);
+})();
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 menuToggle.addEventListener('click', () => {
