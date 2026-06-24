@@ -306,11 +306,12 @@ main {
     font-weight: 800;
     font-size: 0.95rem;
     box-shadow: 0 4px 18px rgba(255,143,112,0.5);
-    transition: transform 0.2s, background 0.2s;
+    transition: transform 0.2s, background 0.2s, opacity 0.35s;
     z-index: 999;
 }
 
 .book-now:hover { background: var(--coral-dk); transform: translateY(-3px); color: var(--white); }
+.book-now.scroll-hidden { opacity: 0; pointer-events: none; transform: translateY(10px); }
 
 /* ── LAYOUT HELPERS ── */
 /*
@@ -322,7 +323,7 @@ main {
  * at step 3 (below the deco), letting the floral strip show in the gutters.
  */
 .section { max-width: 1200px; margin: 24px auto; padding: 36px 24px; position: relative; z-index: 1; background: rgba(255,248,239,0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 16px; }
-.section-alt { margin: 24px; border-radius: 16px; border: 1px solid rgba(210,185,155,0.35); }
+.section-alt { margin: 24px; border-radius: 16px; }
 .section-alt .inner { max-width: 1200px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); background: rgba(255,244,230,0.82); border-radius: 16px; }
 .section-sea { background: var(--sea); color: var(--white); }
 .section-sea .inner { max-width: 1200px; margin: 0 auto; padding: 64px 24px; position: relative; z-index: 1; }

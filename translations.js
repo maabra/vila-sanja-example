@@ -45,7 +45,7 @@ const LANG_DATA = {
     'idx.card.beach.btn':  'Explore beaches',
 
     'idx.card.host.title': 'Meet Your Hosts',
-    'idx.card.host.desc':  'Sanja and Matej welcome you personally, speak German and English, and are always close by to help. Not a hotel - a real home with real people.',
+    'idx.card.host.desc':  'Sanja and Matej welcome you personally, speak German and English, and are always close by to help.',
     'idx.card.host.btn':   'About us',
 
     'idx.card.home.title': 'A Vila, Not a Hotel',
@@ -84,6 +84,7 @@ const LANG_DATA = {
     /* ABOUT page */
     'abt.hero':        'About Vila Sanja',
     'abt.host.title':  'Hosts: Sanja Volner & Matej Abramović',
+    'abt.host.intro':  'We are a mother and son who take care of the house together.',
     'abt.host.p1':     'Vila Sanja is in a very good location, very close to the center and not far from the sea. The entrance to Cape Kamenjak is also nearby. We have a duplex apartment for 6 people, an apartment for 4 people, and a room with a bathroom and balcony. We are dedicated to making guests feel comfortable and are always available.',
     'abt.host.p2':     'The entire villa is surrounded by greenery, and parking spaces are available in the villa\'s courtyard. We try to keep our prices reasonable. Peaceful surroundings - you can sleep well here, and everything you need is nearby. Welcome!',
     'abt.host.p3':     'We live on the property, which means we\'re always here. Need a local recommendation or any kind of help, we\'re right here.',
@@ -150,8 +151,16 @@ const LANG_DATA = {
     'acc.room.cap':   '2 people | 15 m²',
     'acc.room.desc':  'Cozy, freshly renovated room with a private bathroom and a balcony. Includes a mini-fridge, kettle and all essential amenities.',
     'acc.btn':        'View details',
-    'acc.incl.title': 'Included in all units',
-    'acc.incl.sub':   'Everything you need for a comfortable stay',
+    'acc.incl.title':  'Included in all units',
+    'acc.incl.sub':    'Everything you need for a comfortable stay',
+    'accom.chip.ac':   'Air Conditioning',
+    'accom.chip.wifi': 'Free WiFi',
+    'accom.chip.tv':   'Flat-Screen TV',
+    'accom.chip.bath': 'Private Bathroom',
+    'accom.chip.balc': 'Private Balcony',
+    'accom.chip.park': 'Free Parking',
+    'accom.chip.pet':  'Pets Allowed',
+    'accom.chip.heat': 'Heating',
 
     /* DUPLEX page */
     'dpl.hero':   'Duplex Apartment',
@@ -165,7 +174,7 @@ const LANG_DATA = {
     'dpl.l7': 'Flat-screen TV, WiFi',       'dpl.l8': 'Wardrobe, linen provided',
     'dpl.l9': 'Free private parking',       'dpl.l10': 'Pets welcome (charges may apply)',
 
-    /* DUPLEX – Detailed section */
+    /* DUPLEX - Detailed section */
     'dpl.dtl.h2':      'Apartment Details',
     'dpl.dtl.desc':    'Boasting a private entrance, this air-conditioned 73 m² duplex apartment features 2 separate bedrooms, a living room, and 2 bathrooms with shower and hairdryer. The fully equipped kitchen has a stovetop, oven, refrigerator, kettle, coffee/tea maker and kitchenware. A terrace with sea views, flat-screen TV with cable and satellite channels, and free WiFi complete the space. The unit sleeps up to 6.',
     'dpl.dtl.sleep':   'Sleeping Arrangements',
@@ -191,7 +200,7 @@ const LANG_DATA = {
     'dpl.dtl.a7':  'Radio',                           'dpl.dtl.a8':  'Outdoor furniture & dining',
     'dpl.dtl.a9':  'Paved courtyard',                 'dpl.dtl.a10': 'Wardrobe',
     'dpl.dtl.a11': 'Sofa bed (pull-out)',              'dpl.dtl.a12': 'Drying rack & clothes stand',
-    'dpl.dtl.a13': 'Seating area & dining area',      'dpl.dtl.a14': 'Separate building – upper floor (stairs only)',
+    'dpl.dtl.a13': 'Seating area & dining area',      'dpl.dtl.a14': 'Separate building - upper floor (stairs only)',
     'dpl.dtl.a15': 'Hand sanitizer',
 
     /* ONE-BEDROOM page */
@@ -206,7 +215,7 @@ const LANG_DATA = {
     'apt.l7': 'Fridge, kettle, kitchenware', 'apt.l8': 'Wardrobe, linen provided',
     'apt.l9': 'Free private parking',        'apt.l10': 'Pets welcome (charges may apply)',
 
-    /* ONE-BEDROOM – Detailed section */
+    /* ONE-BEDROOM - Detailed section */
     'apt.dtl.h2':      'Apartment Details',
     'apt.dtl.desc':    'Boasting a private entrance, this air-conditioned 35 m² apartment features a separate bedroom, living room and bathroom with shower and hairdryer. The fully equipped kitchen includes a stovetop, oven, refrigerator, kettle and kitchenware. A terrace with sea and garden views, flat-screen TV with cable and satellite channels, and free WiFi complete the space.',
     'apt.dtl.sleep':   'Sleeping Arrangements',
@@ -230,7 +239,7 @@ const LANG_DATA = {
     'apt.dtl.a7':  'Paved courtyard',                 'apt.dtl.a8':  'Wardrobe',
     'apt.dtl.a9':  'Sofa bed (pull-out)',              'apt.dtl.a10': 'Drying rack',
     'apt.dtl.a11': 'Seating area',                    'apt.dtl.a12': 'Separate building',
-    'apt.dtl.a13': 'Upper floor – stairs only',       'apt.dtl.a14': 'Smoking allowed',
+    'apt.dtl.a13': 'Upper floor - stairs only',       'apt.dtl.a14': 'Smoking allowed',
 
     /* ROOM page */
     'rm.hero':   'Double Room with Balcony',
@@ -244,7 +253,7 @@ const LANG_DATA = {
     'rm.l7': 'Fridge & electric kettle',     'rm.l8': 'Wardrobe, linen provided',
     'rm.l9': 'Private entrance',             'rm.l10': 'Free parking',
 
-    /* ROOM – Detailed section */
+    /* ROOM - Detailed section */
     'rm.dtl.h2':      'Room Details',
     'rm.dtl.desc':    'This air-conditioned double room of 15 m² features a private bathroom with shower and hairdryer, and a terrace with garden views. The room has a flat-screen TV with cable channels, a private entrance, a refrigerator, kettle, kitchenware and free WiFi.',
     'rm.dtl.sleep':   'Sleeping Arrangement',
@@ -263,7 +272,7 @@ const LANG_DATA = {
     'rm.dtl.a9':  'Refrigerator',                    'rm.dtl.a10': 'Kettle & kitchenware',
     'rm.dtl.a11': 'Drying rack & clothes stand',     'rm.dtl.a12': 'Seating area',
     'rm.dtl.a13': 'Tiled/marble floor',              'rm.dtl.a14': 'Linen provided',
-    'rm.dtl.a15': 'Outlet near bed',                 'rm.dtl.a16': 'Separate building – upper floor (stairs only)',
+    'rm.dtl.a15': 'Outlet near bed',                 'rm.dtl.a16': 'Separate building - upper floor (stairs only)',
     'rm.dtl.a17': 'Hand sanitizer',
 
     /* REVIEWS page */
@@ -415,6 +424,7 @@ const LANG_DATA = {
     'bch.cave.h3':   'Iconic Rocky Coves',
     'bch.cave.p1':   'The dramatic karst limestone coastline is Kamenjak\'s defining feature. Many coves can only be reached after a short scramble across the rocks, keeping them genuinely secluded even at the height of summer. Crystal-clear turquoise water against white limestone makes for some of the most photogenic scenery on the Adriatic.',
     'bch.cave.tip':  'Arrive before 10 AM to claim the best coves for yourself. Bring water and a picnic — there are no facilities at the remote spots.',
+    'bch.cave.fig':  'Crystal-clear turquoise water tucked between white limestone cliffs at Cape Kamenjak.',
     'bch.dino.fig':  'Fossilized dinosaur footprints preserved directly in the coastal rock at Cape Kamenjak.',
     'bch.dino.h3':   'Dinosaur Footprint Trail',
     'bch.dino.p1':   'A 15-20 minute walking trail through forested terrain leads to fossilized dinosaur footprints preserved directly in the coastal rock. Educational displays along the route explain prehistoric life in Istria.',
@@ -583,7 +593,7 @@ const LANG_DATA = {
     'idx.card.beach.btn':   'Istraži rt Kamenjak',
 
     'idx.card.host.title':  'Upoznajte domaćine',
-    'idx.card.host.desc':   'Sanja i Matej dočekuju vas osobno, govore njemački i engleski, i uvijek su tu za vas. Nismo hotel, nego vila s ljubaznim domaćinima.',
+    'idx.card.host.desc':   'Sanja i Matej dočekuju vas osobno, govore njemački i engleski, i uvijek su tu za vas.',
     'idx.card.host.btn':    'O nama',
 
     'idx.card.home.title':  'Vila, a ne hotel',
@@ -617,6 +627,7 @@ const LANG_DATA = {
 
     'abt.hero':        'O nama',
     'abt.host.title':  'Domaćini: Sanja Volner i Matej Abramović',
+    'abt.host.intro':  'Mi smo majka i sin koji zajedno vode i brinu o ovom domu.',
     'abt.host.p1':     'Vila Sanja je na odličnoj lokaciji, vrlo blizu centra i nedaleko od mora. Ulaz na rt Kamenjak je također u blizini. Imamo dupleks apartman za 6 osoba, apartman za 4 osobe i sobu s kupaonicom i balkonom. Posvećeni smo ugodnom boravku gostiju i uvijek smo dostupni.',
     'abt.host.p2':     'Cijela vila je okružena zelenilom, a parkirna mjesta su dostupna u dvorištu vile. Trudimo se da naše cijene budu razumne. Mirno okruženje, ovdje se dobro spava, a sve što trebate je u blizini. Dobrodošli!',
     'abt.host.p3':     'Živimo na imanju, što znači da smo uvijek tu. Trebate li lokalnu preporuku, kakvu pomoć, mi smo ovdje.',
@@ -682,8 +693,16 @@ const LANG_DATA = {
     'acc.room.cap':   '2 osobe | Soba',
     'acc.room.desc':  'Ugodna, svježe renovirana soba s privatnom kupaonicom i balkonom. Uključuje hladnjak, kuhalo i sve potrebne potrepštine.',
     'acc.btn':        'Pogledaj detalje',
-    'acc.incl.title': 'Uključeno u svim jedinicama',
-    'acc.incl.sub':   'Sve što trebate za udoban boravak',
+    'acc.incl.title':  'Uključeno u svim jedinicama',
+    'acc.incl.sub':    'Sve što trebate za udoban boravak',
+    'accom.chip.ac':   'Klimatizacija',
+    'accom.chip.wifi': 'Besplatni WiFi',
+    'accom.chip.tv':   'Pločasti TV',
+    'accom.chip.bath': 'Privatna kupaonica',
+    'accom.chip.balc': 'Privatni balkon',
+    'accom.chip.park': 'Besplatno parkiranje',
+    'accom.chip.pet':  'Kućni ljubimci dopušteni',
+    'accom.chip.heat': 'Grijanje',
 
     'dpl.hero':   'Dupleks apartman',
     'dpl.h2':     'Prostrani dvoetažni apartman',
@@ -696,7 +715,7 @@ const LANG_DATA = {
     'dpl.l7': 'Flat-screen TV, WiFi',          'dpl.l8': 'Ormar, posteljina je osigurana',
     'dpl.l9': 'Besplatni privatni parking',    'dpl.l10': 'Kućni ljubimci dobrodošli (može se naplatiti)',
 
-    /* DUPLEX – Detailed section */
+    /* DUPLEX - Detailed section */
     'dpl.dtl.h2':      'Detalji apartmana',
     'dpl.dtl.desc':    'Ovaj klimatizirani dupleks apartman od 73 m² s privatnim ulazom uključuje 2 zasebne spavaće sobe, dnevni boravak i 2 kupaonice s tušem i sušilom za kosu. Potpuno opremljena kuhinja ima ploče za kuhanje, pećnicu, hladnjak, kuhalo za vodu, aparat za kavu/čaj i kuhinjski pribor. Terasa s pogledom na more, TV ravnog ekrana s kabelskim i satelitskim programima te besplatni Wi-Fi upotpunjuju prostor. Apartman prima do 6 osoba.',
     'dpl.dtl.sleep':   'Raspored spavanja',
@@ -722,7 +741,7 @@ const LANG_DATA = {
     'dpl.dtl.a7':  'Radio',                                'dpl.dtl.a8':  'Vanjski namještaj i blagovaonica',
     'dpl.dtl.a9':  'Popločani dio dvorišta',               'dpl.dtl.a10': 'Ormar',
     'dpl.dtl.a11': 'Kauč na rasklapanje',                  'dpl.dtl.a12': 'Sušilo i stalak za odjeću',
-    'dpl.dtl.a13': 'Prostor za sjedenje i blagovaonica',   'dpl.dtl.a14': 'Zasebna zgrada – gornji kat (stepenicama)',
+    'dpl.dtl.a13': 'Prostor za sjedenje i blagovaonica',   'dpl.dtl.a14': 'Zasebna zgrada - gornji kat (stepenicama)',
     'dpl.dtl.a15': 'Sredstvo za dezinfekciju ruku',
 
     'apt.hero':   'Jednosobni apartman',
@@ -736,7 +755,7 @@ const LANG_DATA = {
     'apt.l7': 'Hladnjak, kuhalo, kuhinjski pribor','apt.l8': 'Ormar, posteljina je osigurana',
     'apt.l9': 'Besplatni privatni parking',    'apt.l10': 'Kućni ljubimci dobrodošli (može se naplatiti)',
 
-    /* ONE-BEDROOM – Detailed section */
+    /* ONE-BEDROOM - Detailed section */
     'apt.dtl.h2':      'Detalji apartmana',
     'apt.dtl.desc':    'Ovaj klimatizirani apartman od 35 m² s privatnim ulazom uključuje zasebnu spavaću sobu, dnevni boravak i kupaonicu s tušem i sušilom za kosu. Potpuno opremljena kuhinja ima ploče za kuhanje, pećnicu, hladnjak, kuhalo za vodu i kuhinjski pribor. Terasa s pogledom na more i vrt, TV ravnog ekrana s kabelskim i satelitskim programima te besplatni Wi-Fi upotpunjuju prostor.',
     'apt.dtl.sleep':   'Raspored spavanja',
@@ -760,7 +779,7 @@ const LANG_DATA = {
     'apt.dtl.a7':  'Popločani dio dvorišta',               'apt.dtl.a8':  'Ormar',
     'apt.dtl.a9':  'Kauč na rasklapanje',                  'apt.dtl.a10': 'Sušilo za rublje',
     'apt.dtl.a11': 'Prostor za sjedenje',                  'apt.dtl.a12': 'Zasebna zgrada',
-    'apt.dtl.a13': 'Gornji kat – isključivo stepenicama',  'apt.dtl.a14': 'Pušenje dozvoljeno',
+    'apt.dtl.a13': 'Gornji kat - isključivo stepenicama',  'apt.dtl.a14': 'Pušenje dozvoljeno',
 
     'rm.hero':   'Dvokrevetna soba s balkonom',
     'rm.h2':     'Ugodna soba u srcu Premanture',
@@ -773,7 +792,7 @@ const LANG_DATA = {
     'rm.l7': 'Hladnjak i električno kuhalo',   'rm.l8': 'Ormar, posteljina je osigurana',
     'rm.l9': 'Privatni ulaz',                  'rm.l10': 'Besplatni parking',
 
-    /* ROOM – Detailed section */
+    /* ROOM - Detailed section */
     'rm.dtl.h2':      'Detalji sobe',
     'rm.dtl.desc':    'Ova klimatizirana dvokrevetna soba od 15 m² ima privatnu kupaonicu s tušem i sušilom za kosu te terasu s pogledom na vrt. U sobi se nalazi TV ravnog ekrana s kabelskim programima, privatni ulaz, hladnjak, kuhalo za vodu, kuhinjski pribor i besplatni Wi-Fi.',
     'rm.dtl.sleep':   'Raspored spavanja',
@@ -792,7 +811,7 @@ const LANG_DATA = {
     'rm.dtl.a9':  'Hladnjak',                             'rm.dtl.a10': 'Kuhalo za vodu i pribor',
     'rm.dtl.a11': 'Sušilo i stalak za odjeću',            'rm.dtl.a12': 'Prostor za sjedenje',
     'rm.dtl.a13': 'Popločani/mramorni pod',               'rm.dtl.a14': 'Posteljina osigurana',
-    'rm.dtl.a15': 'Utičnica pokraj kreveta',              'rm.dtl.a16': 'Zasebna zgrada – gornji kat (stepenicama)',
+    'rm.dtl.a15': 'Utičnica pokraj kreveta',              'rm.dtl.a16': 'Zasebna zgrada - gornji kat (stepenicama)',
     'rm.dtl.a17': 'Sredstvo za dezinfekciju ruku',
 
     'rev.hero':       'Recenzije gostiju',
@@ -930,7 +949,7 @@ const LANG_DATA = {
     'bch.fam.p1':    'Nekoliko šljunčanih uvala nudi postepen ulaz prikladan za djecu. Potražite plaže u blizini Safari Bara i Malog Portića. Plitka, mirna voda na zapadnoj strani rta općenito je mirnija od izloženih istočnih stijena.',
     'bch.fam.tip':   'Preuzmite kartu na ulazu, označava najmirnija mjesta ikonama za obitelji.',
     'bch.high.h2':   'Obavezno posjetiti',
-    'bch.safari.fig': 'Legendarni Safari Bar, drveni stolovi smješteni u egzotičnoj mediteranskoj vegetaciji uz more.',
+    'bch.safari.fig': 'Legendarni Safari Bar, bar okružen prirodom i smješten u egzotičnoj mediteranskoj vegetaciji uz more.',
     'bch.safari.p1': 'Najupečatljivije mjesto na rtu Kamenjak, i zasigurno jedan od najfotografirakanijih barova u Hrvatskoj. Smješten u egzotičnoj mediteranskoj vegetaciji, osjećate se kao da ste u džungli uz more. Drveni stolovi skriveni su u zelenim "boksevima", a pogledi na Jadran su zadivljujući.',
     'bch.safari.l1': 'Naručite cheesecake na vrijeme, brzo se rasprodaje',
     'bch.safari.l2': 'Velika ljuljačka na konopima idealna za fotografije',
@@ -941,6 +960,7 @@ const LANG_DATA = {
     'bch.cave.h3':   'Kultne kamenite uvale',
     'bch.cave.p1':   'Dramatična krška obala od vapnenca pravo je obilježje Kamenjaka. Mnoge uvale dostupne su samo nakon kratkog penjanja po stijenama, što ih čini uistinu skrivenim draguljem čak i u vrhuncu sezone. Kristalno bistro tirkizno more susreće se s bijelim vapnencem u jednoj od najfotogeničnijih scenografija na Jadranu.',
     'bch.cave.tip':  'Dođite prije 10 ujutro kako biste zauzeli najljepše uvale. Ponesite vodu i hranu — na udaljenim mjestima nema sadržaja.',
+    'bch.cave.fig':  'Kristalno bistro tirkizno more smješteno između bijelih vapnenačkih stijena na rtu Kamenjak.',
     'bch.dino.fig':  'Fosilizirani otisci stopala dinosaura sačuvani izravno u obalnoj stijeni na rtu Kamenjak.',
     'bch.dino.h3':   'Staza otisaka dinosaura',
     'bch.dino.p1':   'Šetnička staza duga 15-20 minuta kroz pošumljeni teren vodi do fosiliziranih otisaka stopala dinosaura sačuvanih izravno u obalnoj stijeni. Edukativne ploče uz rutu objašnjavaju pretpovijesni život u Istri.',
@@ -974,7 +994,7 @@ const LANG_DATA = {
     'bch.tips.mobile.h4': 'Veza i karte',
     'bch.tips.mobile.p':  'Mobilni signal je slab ili ne postoji u velikom dijelu rta. Preuzmite offline kartu prije dolaska i uzmite papirnatu kartu na ulaznoj rampi.',
     'bch.tips.time.h4':   'Kada je najljepše doći',
-    'bch.tips.time.p':    'Rano jutro (prije 10 sati) ili kasno poslijepodne su idealni, hladnije je, mirnije, a svjetlost za fotografije je čarobna u zalazak sunca. Radni dani su manje gužvazniji od vikenda u srpnju i kolovozu.',
+    'bch.tips.time.p':    'Rano jutro (prije 10 sati) ili kasno poslijepodne su idealni, hladnije je, mirnije, a svjetlost za fotografije je čarobna u zalazak sunca. Radni dani imaju manje prometa od vikenda u srpnju i kolovozu.',
     'bch.tips.bring.h4':  'Što ponijeti',
     'bch.tips.bring.l1':  'Dovoljno vode',
     'bch.tips.bring.l2':  'Grickalice iz sela',
@@ -1109,7 +1129,7 @@ const LANG_DATA = {
     'idx.card.beach.btn':   'Strände entdecken',
 
     'idx.card.host.title':  'Lernen Sie Ihre Gastgeber kennen',
-    'idx.card.host.desc':   'Sanja und Matej heißen Sie persönlich willkommen, sprechen Deutsch und Englisch und sind immer für Sie da. Kein Hotel - ein echtes Zuhause mit echten Menschen.',
+    'idx.card.host.desc':   'Sanja und Matej heißen Sie persönlich willkommen, sprechen Deutsch und Englisch und sind immer für Sie da.',
     'idx.card.host.btn':    'Über uns',
 
     'idx.card.home.title':  'Eine Vila, kein Hotel',
@@ -1143,6 +1163,7 @@ const LANG_DATA = {
 
     'abt.hero':        'Über Vila Sanja',
     'abt.host.title':  'Gastgeber: Sanja Volner & Matej Abramović',
+    'abt.host.intro':  'Wir sind Mutter und Sohn und kümmern uns gemeinsam um das Haus.',
     'abt.host.p1':     'Vila Sanja liegt an einem sehr guten Standort, sehr nah am Zentrum und nicht weit vom Meer. Der Eingang zu Kap Kamenjak ist ebenfalls in der Nähe. Wir haben eine Duplex-Wohnung für 6 Personen, ein Apartment für 4 Personen und ein Zimmer mit Bad und Balkon. Wir sind stets darum bemüht, dass sich die Gäste wohlfühlen, und immer erreichbar.',
     'abt.host.p2':     'Die gesamte Villa ist von Grün umgeben, und Parkplätze stehen im Innenhof zur Verfügung. Wir versuchen, unsere Preise fair zu halten. Ruhige Umgebung - hier schläft man gut, und alles, was man braucht, ist in der Nähe. Herzlich willkommen!',
     'abt.host.p3':     'Wir wohnen auf dem Anwesen, das bedeutet, wir sind immer da. Brauchen Sie eine lokale Empfehlung oder irgendeine Hilfe - wir sind für Sie da.',
@@ -1208,8 +1229,16 @@ const LANG_DATA = {
     'acc.room.cap':   '2 Personen | 15 m²',
     'acc.room.desc':  'Gemütliches, frisch renoviertes Zimmer mit privatem Bad und Balkon. Mit Mini-Kühlschrank, Wasserkocher und allem Notwendigen.',
     'acc.btn':        'Details ansehen',
-    'acc.incl.title': 'In allen Einheiten enthalten',
-    'acc.incl.sub':   'Alles, was Sie für einen komfortablen Aufenthalt brauchen',
+    'acc.incl.title':  'In allen Einheiten enthalten',
+    'acc.incl.sub':    'Alles, was Sie für einen komfortablen Aufenthalt brauchen',
+    'accom.chip.ac':   'Klimaanlage',
+    'accom.chip.wifi': 'Kostenloses WLAN',
+    'accom.chip.tv':   'Flachbild-TV',
+    'accom.chip.bath': 'Privates Badezimmer',
+    'accom.chip.balc': 'Privater Balkon',
+    'accom.chip.park': 'Kostenloser Parkplatz',
+    'accom.chip.pet':  'Haustiere erlaubt',
+    'accom.chip.heat': 'Heizung',
 
     'dpl.hero':   'Duplex-Wohnung',
     'dpl.h2':     'Geräumiges Apartment auf zwei Etagen',
@@ -1222,7 +1251,7 @@ const LANG_DATA = {
     'dpl.l7': 'Flachbild-TV, WLAN',             'dpl.l8': 'Kleiderschrank, Bettwäsche inklusive',
     'dpl.l9': 'Kostenfreier Privatparkplatz',   'dpl.l10': 'Haustiere willkommen (Gebühren möglich)',
 
-    /* DUPLEX – Detailed section */
+    /* DUPLEX - Detailed section */
     'dpl.dtl.h2':      'Wohnungsdetails',
     'dpl.dtl.desc':    'Dieses klimatisierte 73 m² große Duplex-Apartment mit privatem Eingang verfügt über 2 separate Schlafzimmer, ein Wohnzimmer und 2 Badezimmer mit Dusche und Haartrockner. Die voll ausgestattete Küche bietet Herd, Backofen, Kühlschrank, Wasserkocher, Kaffee-/Teemaschine und Kochgeschirr. Eine Terrasse mit Meerblick, Flachbildfernseher mit Kabel- und Satellitenkanälen und kostenloses WLAN runden das Apartment ab. Das Apartment bietet Platz für bis zu 6 Personen.',
     'dpl.dtl.sleep':   'Schlafplätze',
@@ -1248,7 +1277,7 @@ const LANG_DATA = {
     'dpl.dtl.a7':  'Radio',                               'dpl.dtl.a8':  'Außenmöbel & Essbereich',
     'dpl.dtl.a9':  'Gepflasterter Innenhof',              'dpl.dtl.a10': 'Kleiderschrank',
     'dpl.dtl.a11': 'Schlafsofa',                          'dpl.dtl.a12': 'Wäscheständer & Kleiderständer',
-    'dpl.dtl.a13': 'Sitzbereich & Essbereich',            'dpl.dtl.a14': 'Separates Gebäude – Obergeschoss (nur Treppe)',
+    'dpl.dtl.a13': 'Sitzbereich & Essbereich',            'dpl.dtl.a14': 'Separates Gebäude - Obergeschoss (nur Treppe)',
     'dpl.dtl.a15': 'Handdesinfektionsmittel',
 
     'apt.hero':   'Einzimmer-Apartment',
@@ -1262,7 +1291,7 @@ const LANG_DATA = {
     'apt.l7': 'Kühlschrank, Wasserkocher, Kochgeschirr','apt.l8': 'Kleiderschrank, Bettwäsche inklusive',
     'apt.l9': 'Kostenfreier Privatparkplatz',   'apt.l10': 'Haustiere willkommen (Gebühren möglich)',
 
-    /* ONE-BEDROOM – Detailed section */
+    /* ONE-BEDROOM - Detailed section */
     'apt.dtl.h2':      'Wohnungsdetails',
     'apt.dtl.desc':    'Dieses klimatisierte 35 m² große Apartment mit privatem Eingang verfügt über ein separates Schlafzimmer, Wohnzimmer und Bad mit Dusche und Haartrockner. Die voll ausgestattete Küche bietet Herd, Backofen, Kühlschrank, Wasserkocher und Kochgeschirr. Eine Terrasse mit Meer- und Gartenblick, Flachbildfernseher mit Kabel- und Satellitenkanälen und kostenlosem WLAN runden das Apartment ab.',
     'apt.dtl.sleep':   'Schlafplätze',
@@ -1286,7 +1315,7 @@ const LANG_DATA = {
     'apt.dtl.a7':  'Gepflasterter Innenhof',              'apt.dtl.a8':  'Kleiderschrank',
     'apt.dtl.a9':  'Schlafsofa',                          'apt.dtl.a10': 'Wäscheständer',
     'apt.dtl.a11': 'Sitzbereich',                         'apt.dtl.a12': 'Separates Gebäude',
-    'apt.dtl.a13': 'Obere Etage – nur Treppe',            'apt.dtl.a14': 'Rauchen erlaubt',
+    'apt.dtl.a13': 'Obere Etage - nur Treppe',            'apt.dtl.a14': 'Rauchen erlaubt',
 
     'rm.hero':   'Doppelzimmer mit Balkon',
     'rm.h2':     'Gemütliches Zimmer im Herzen von Premantura',
@@ -1299,7 +1328,7 @@ const LANG_DATA = {
     'rm.l7': 'Kühlschrank & Wasserkocher',      'rm.l8': 'Kleiderschrank, Bettwäsche inklusive',
     'rm.l9': 'Privater Eingang',                'rm.l10': 'Kostenfreier Parkplatz',
 
-    /* ROOM – Detailed section */
+    /* ROOM - Detailed section */
     'rm.dtl.h2':      'Zimmerdetails',
     'rm.dtl.desc':    'Dieses klimatisierte Doppelzimmer von 15 m² verfügt über ein privates Bad mit Dusche und Haartrockner sowie eine Terrasse mit Gartenblick. Das Zimmer bietet einen Flachbildfernseher mit Kabelkanälen, privaten Eingang, Kühlschrank, Wasserkocher, Kochgeschirr und kostenloses WLAN.',
     'rm.dtl.sleep':   'Schlafplatz',
@@ -1318,7 +1347,7 @@ const LANG_DATA = {
     'rm.dtl.a9':  'Kühlschrank',                       'rm.dtl.a10': 'Wasserkocher & Kochgeschirr',
     'rm.dtl.a11': 'Wäscheständer & Kleiderständer',    'rm.dtl.a12': 'Sitzbereich',
     'rm.dtl.a13': 'Fliesen-/Marmorböden',              'rm.dtl.a14': 'Bettwäsche inklusive',
-    'rm.dtl.a15': 'Steckdose am Bett',                 'rm.dtl.a16': 'Separates Gebäude – Obergeschoss (nur Treppe)',
+    'rm.dtl.a15': 'Steckdose am Bett',                 'rm.dtl.a16': 'Separates Gebäude - Obergeschoss (nur Treppe)',
     'rm.dtl.a17': 'Handdesinfektionsmittel',
 
     'rev.hero':       'Gästebewertungen',
@@ -1465,8 +1494,9 @@ const LANG_DATA = {
     'bch.safari.l5': 'Besonders zauberhaft beim Sonnenuntergang',
     'bch.swing.fig': 'Die ikonischen Seilschaukeln der Safari Bar, ein beliebter Fotomotiv für Besucher.',
     'bch.cave.h3':   'Legendäre Felsenbuchten',
-    'bch.cave.p1':   'Die dramatische Karstküste aus Kalkstein ist das Markenzeichen von Kamenjak. Viele Buchten sind nur nach einem kurzen Klettern erreichbar, was sie selbst in der Hochsaison herrlich einsam hält. Kristallklares türkisfarbenes Wasser trifft auf weißen Kalkstein – eine der fotogenischsten Küstenlandschaften der Adria.',
+    'bch.cave.p1':   'Die dramatische Karstküste aus Kalkstein ist das Markenzeichen von Kamenjak. Viele Buchten sind nur nach einem kurzen Klettern erreichbar, was sie selbst in der Hochsaison herrlich einsam hält. Kristallklares türkisfarbenes Wasser trifft auf weißen Kalkstein - eine der fotogenischsten Küstenlandschaften der Adria.',
     'bch.cave.tip':  'Kommen Sie vor 10 Uhr, um sich die schönsten Buchten zu sichern. Wasser und Proviant mitbringen — an abgelegenen Stellen gibt es keine Einrichtungen.',
+    'bch.cave.fig':  'Kristallklares türkisfarbenes Wasser zwischen weißen Kalksteinklippen an Kap Kamenjak.',
     'bch.dino.fig':  'Fossilierte Dinosaurier-Fußabdrücke, direkt im Küstenfels von Kap Kamenjak erhalten.',
     'bch.dino.h3':   'Dinosaurier-Fußabdruckpfad',
     'bch.dino.p1':   'Ein 15-20-minütiger Wanderweg durch bewaldetes Gelände führt zu fossilierten Dinosaurier-Fußabdrücken, die direkt im Küstenfels erhalten sind. Lehrreiche Tafeln entlang der Route erklären das prähistorische Leben in Istrien.',

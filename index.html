@@ -90,6 +90,14 @@
         </div>
     </section>
 
+    <!-- STATS -->
+    <div class="stats-bar">
+        <div class="stat-item"><span class="stat-num">3</span><span class="stat-lbl" data-i18n="idx.stat.types">Accommodation types</span></div>
+        <div class="stat-item"><span class="stat-num">100+</span><span class="stat-lbl" data-i18n="idx.stat.guests">Happy guests</span></div>
+        <div class="stat-item"><span class="stat-num">300m</span><span class="stat-lbl" data-i18n="idx.stat.dist">From village center</span></div>
+        <div class="stat-item"><span class="stat-num" id="guest-rating-value">4.4<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 5</span></span><span class="stat-lbl" data-i18n="idx.stat.rating">Guest rating</span></div>
+    </div>
+
     <!-- FEATURE CARDS -->
     <section class="section-alt">
         <div class="inner" style="text-align:center;">
@@ -98,7 +106,7 @@
             <div class="section-sub" data-i18n="idx.feat.sub">Everything you need for a perfect Istrian holiday</div>
             <div class="accom-grid" style="margin-top:0;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
                 <div class="card">
-                    <img src="images/depo/sunset.jpg" alt="Beaches near Vila Sanja">
+                    <img src="images/depo/aerial rt kamenjak.png" alt="Beaches near Vila Sanja">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-umbrella-beach" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.beach.title">Beaches Nearby</span></div>
                         <div class="card-desc" data-i18n="idx.card.beach.desc">Just steps from the Adriatic Sea and the entrance to Cape Kamenjak Nature Park.</div>
@@ -106,23 +114,15 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/gallery/apt 2.jpg" alt="Happy guests at Vila Sanja">
-                    <div class="card-body">
-                        <div class="card-title"><i class="fa-solid fa-star" style="color:var(--sun);margin-right:7px;"></i><span data-i18n="idx.card.rev.title">Guests Love Us</span></div>
-                        <div class="card-desc" data-i18n="idx.card.rev.desc">100+ happy guests and an overall rating of 4.4/5. Our visitors keep coming back – read what they have to say!</div>
-                        <a href="reviews.html" class="cta-button" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.rev.btn">Read reviews</a>
-                    </div>
-                </div>
-                <div class="card">
                     <img src="images/index/owners.jpg" alt="Your hosts Sanja and Matej">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-heart" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.host.title">Meet Your Hosts</span></div>
-                        <div class="card-desc" data-i18n="idx.card.host.desc">Sanja and Matej welcome you personally, speak German and English, and are always close by to help. Not a hotel – a real home with real people.</div>
+                        <div class="card-desc" data-i18n="idx.card.host.desc">Sanja and Matej welcome you personally, speak German and English, and are always close by to help.</div>
                         <a href="about.html" class="cta-button sea" style="margin-top:auto;align-self:flex-start;padding:10px 20px;font-size:0.9rem;" data-i18n="idx.card.host.btn">About us</a>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/gallery/room.jpg" alt="Cozy room at Vila Sanja">
+                    <img src="images/gallery/combine.png" alt="Cozy room at Vila Sanja">
                     <div class="card-body">
                         <div class="card-title"><i class="fa-solid fa-mug-hot" style="color:var(--coral);margin-right:7px;"></i><span data-i18n="idx.card.home.title">A Vila, Not a Hotel</span></div>
                         <div class="card-desc" data-i18n="idx.card.home.desc">Shaded courtyard, garden views, quiet Istrian evenings. A real family property where you can slow down, breathe, and truly arrive.</div>
@@ -132,14 +132,6 @@
             </div>
         </div>
     </section>
-
-    <!-- STATS -->
-    <div class="stats-bar">
-        <div class="stat-item"><span class="stat-num">3</span><span class="stat-lbl" data-i18n="idx.stat.types">Accommodation types</span></div>
-        <div class="stat-item"><span class="stat-num">100+</span><span class="stat-lbl" data-i18n="idx.stat.guests">Happy guests</span></div>
-        <div class="stat-item"><span class="stat-num">300m</span><span class="stat-lbl" data-i18n="idx.stat.dist">From village center</span></div>
-        <div class="stat-item"><span class="stat-num" id="guest-rating-value">4.4<span style="font-size:0.55em;opacity:0.7;font-weight:500;"> / 5</span></span><span class="stat-lbl" data-i18n="idx.stat.rating">Guest rating</span></div>
-    </div>
 
     <!-- WHAT GUESTS SAY -->
     <section class="section" style="text-align:center;">
@@ -198,7 +190,7 @@
     </section>
 </main>
 
-<a href="contact.html" class="book-now" data-i18n="nav.booknow">Book Now!</a>
+<a href="contact.html" class="book-now scroll-hidden" id="book-now-btn" data-i18n="nav.booknow">Book Now!</a>
 
 <footer>
     <div class="footer-main">
@@ -219,6 +211,12 @@
 
 <script src="translations.js"></script>
 <script>
+(function() {
+    var btn = document.getElementById('book-now-btn');
+    window.addEventListener('scroll', function() {
+        btn.classList.toggle('scroll-hidden', window.scrollY < 120);
+    }, { passive: true });
+})();
 (function() {
     var imgs = ['images/index/fronthouse.jpg', 'images/index/fronthouse2.jpg'];
     var cur = 0;
