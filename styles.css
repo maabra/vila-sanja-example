@@ -287,7 +287,7 @@ main {
 /* ── FLOATING BOOK NOW ── */
 .book-now {
     position: fixed;
-    bottom: 24px; right: 24px;
+    bottom: 24px; right: 34px;
     background: var(--coral);
     color: var(--white);
     padding: 13px 24px;
@@ -311,9 +311,9 @@ main {
  * .section-alt stays non-positioned so its full-width sandy background remains
  * at step 3 (below the deco), letting the floral strip show in the gutters.
  */
-.section { max-width: 1200px; margin: 0 auto; padding: 64px 24px; position: relative; z-index: 1; }
-.section-alt { background: var(--sand-mid); }
-.section-alt .inner { max-width: 1200px; margin: 0 auto; padding: 64px 24px; position: relative; z-index: 1; }
+.section { max-width: 1200px; margin: 24px auto; padding: 36px 24px; position: relative; z-index: 1; background: rgba(255,248,239,0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 16px; }
+.section-alt { background: rgba(255,240,220,0.75); margin: 24px 0; border-top: 1px solid rgba(210,185,155,0.35); border-bottom: 1px solid rgba(210,185,155,0.35); }
+.section-alt .inner { max-width: 1200px; margin: 0 auto; padding: 36px 24px; position: relative; z-index: 1; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); background: rgba(255,244,230,0.82); border-radius: 12px; }
 .section-sea { background: var(--sea); color: var(--white); }
 .section-sea .inner { max-width: 1200px; margin: 0 auto; padding: 64px 24px; position: relative; z-index: 1; }
 
@@ -573,7 +573,7 @@ main {
 .lb-close:hover { background: rgba(255,255,255,0.28); }
 
 /* ── CONTACT ── */
-.contact-wrap { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
+.contact-wrap { max-width: 900px; margin: 0 auto; }
 
 .contact-block {
     background: var(--white);
@@ -601,6 +601,7 @@ main {
     padding: 36px 32px;
     margin-bottom: 28px;
 }
+.about-card:last-child { margin-bottom: 0; }
 
 .page-section-title {
     font-size: 1.25rem; font-weight: 700;
@@ -638,7 +639,7 @@ main {
 .feat-list li::before { content: "•"; color: var(--coral); position: absolute; left: 0; }
 
 /* ── RULES ── */
-.rules-wrap { max-width: 1000px; margin: 0 auto; padding: 60px 24px; }
+.rules-wrap { max-width: 1000px; margin: 0 auto; }
 
 .rules-h1 {
     font-size: 2rem; font-weight: 800;
@@ -749,15 +750,47 @@ footer {
     background: var(--sea-deep);
     color: rgba(255,255,255,0.9);
     padding: 44px 24px 20px;
-    text-align: center;
     font-size: 0.92rem;
     line-height: 1.85;
     position: relative;
     z-index: 1;
 }
+.footer-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.footer-info { flex: 1; text-align: right; }
+.footer-divider {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(255,255,255,0.2);
+    flex-shrink: 0;
+}
+.footer-counter {
+    flex: 1;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60px;
+}
+.footer-counter img { border-radius: 4px; display: block; max-width: 100%; }
 footer a { color: var(--sun); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
-.footer-icons { display: flex; justify-content: center; gap: 14px; margin: 20px 0 10px; }
+.footer-icons { display: flex; justify-content: flex-end; gap: 14px; margin: 14px 0 0; }
+.footer-copy { text-align: center; margin-top: 24px; opacity: 0.55; font-size: 0.84rem; max-width: 960px; margin-left: auto; margin-right: auto; }
+@media (max-width: 600px) {
+    .footer-main { flex-direction: column-reverse; align-items: center; }
+    .footer-info { text-align: center; }
+    .footer-divider { width: 60px; height: 1px; align-self: auto; }
+    .footer-icons { justify-content: center; }
+}
 .f-icon {
     display: inline-flex; align-items: center; justify-content: center;
     width: 40px; height: 40px; border-radius: 50%;
@@ -767,7 +800,6 @@ footer a:hover { text-decoration: underline; }
 .f-icon:hover { transform: scale(1.1); }
 .f-b { background: #003580; color: #fff; }
 .f-g { background: #4285F4; color: #fff; }
-.footer-copy { margin-top: 14px; opacity: 0.55; font-size: 0.84rem; }
 
 /* ── BOOKING PAGE ── */
 .booking-wrap { max-width: 960px; margin: 0 auto; padding: 60px 24px; }
