@@ -173,6 +173,26 @@
             text-decoration: none; margin-top: 14px;
         }
         .bch-map-btn:hover { background: var(--sea); }
+
+        /* ── Bottom CTA buttons ── */
+        .cta-btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        @media (max-width: 500px) {
+            .cta-btn-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-btn-row .cta-button {
+                width: 100%;
+                max-width: 320px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -503,9 +523,10 @@
             <!-- CTA -->
             <div style="text-align:center;margin-top:40px;">
                 <p data-i18n="bch.cta.p" style="color:var(--text-lt);margin-bottom:16px;">Staying at Vila Sanja puts you just minutes from all of this.</p>
-                <a href="premantura.html" class="cta-button sea" data-i18n="bch.back">Back to Premantura</a>
-                &nbsp;&nbsp;
-                <a href="contact.html" class="cta-button" data-i18n="bch.cta.book">Book your stay &rarr;</a>
+                <div class="cta-btn-row">
+                    <a href="premantura.html" class="cta-button sea" data-i18n="bch.back">Back to Premantura</a>
+                    <a href="contact.html" class="cta-button" data-i18n="bch.cta.book">Book your stay &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
