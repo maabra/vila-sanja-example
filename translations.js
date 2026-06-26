@@ -17,7 +17,7 @@ const LANG_DATA = {
     /* INDEX - hero */
     'idx.hero.title':  'Vila Sanja - Your oasis of calm on the Adriatic',
     'idx.hero.sub':    'Your oasis of calm on the Adriatic',
-    'idx.hero.desc':   'Comfortable apartments and rooms in Premantura, Istria. Air conditioning, private balconies, free WiFi and parking. Just minutes from the sea and Cape Kamenjak.',
+    'idx.hero.desc':   'Comfortable apartments and room in Premantura, Istria. Air conditioning, private balconies, free WiFi and parking. Just minutes from the sea and Cape Kamenjak.',
     'idx.hero.cta':    'Book your holiday',
     'idx.hero.scroll': 'Scroll down',
 
@@ -567,7 +567,7 @@ const LANG_DATA = {
 
     'idx.hero.title':  'Vila Sanja',
     'idx.hero.sub':    'Vaša oaza mira na Jadranu',
-    'idx.hero.desc':   'Udobni apartmani i sobe u Premanturi, Istra. Klima uređaji, privatni balkoni, besplatni WiFi i parking, predivna i mirna lokacija. Ugodni i opremljeni smještaji. Samo nekoliko minuta od mora i rta Kamenjak.',
+    'idx.hero.desc':   'Udobni apartmani i soba u Premanturi, Istra. Klima uređaji, privatni balkoni, besplatni WiFi i parking, predivna i mirna lokacija. Ugodni i opremljeni smještaji. Samo nekoliko minuta od mora i rta Kamenjak.',
     'idx.hero.cta':    'Rezervirajte odmor',
     'idx.hero.scroll': 'Skrolajte dolje',
 
@@ -1782,6 +1782,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scheduleGuestRatingUpdate();
   observeElfsightRating();
+
+  // Back to top button
+  const bttBtn = document.getElementById('back-to-top-btn');
+  if (bttBtn) {
+    window.addEventListener('scroll', function() {
+      bttBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    bttBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Mobile navbar hide on scroll (only on small screens)
+  (function() {
+    var hdr = document.getElementById('site-header');
+    if (!hdr) return;
+    var lastY = window.scrollY;
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth > 800) { hdr.style.transform = ''; return; }
+      var y = window.scrollY;
+      hdr.style.transform = (y > lastY && y > 80) ? 'translateY(-100%)' : '';
+      lastY = y;
+    }, { passive: true });
+  })();
+
+  // Copyright year auto-update
+  document.querySelectorAll('.footer-copy').forEach(function(el) {
+    el.innerHTML = el.innerHTML.replace(/\b20\d{2}\b/, new Date().getFullYear());
+  });
+
+  // Copy email to clipboard
+  document.querySelectorAll('.copy-email-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var email = btn.dataset.email || '';
+      navigator.clipboard.writeText(email).then(function() {
+        btn.classList.add('copied');
+        var icon = btn.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-check';
+        setTimeout(function() {
+          btn.classList.remove('copied');
+          if (icon) icon.className = 'fa-solid fa-copy';
+        }, 2000);
+      });
+    });
+  });
 
   // Dark mode toggle
   const savedTheme = localStorage.getItem('vs-theme') || 'light';
