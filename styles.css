@@ -20,6 +20,224 @@
     --radius:    12px;
 }
 
+/* === DARK MODE PALETTE === */
+/*
+ * --white stays #fff: it is used for text/icons on colored surfaces (nav, buttons,
+ * hero). Card/panel backgrounds are overridden explicitly per-component below.
+ */
+[data-theme="dark"] {
+    --sand:      #0F1923;
+    --sand-mid:  #152031;
+    --sand-dark: #1A2B3D;
+    --sea:       #0D8F89;
+    --sea-deep:  #17A09A;
+    --sea-light: #1A4550;
+    --coral:     #E07898;
+    --coral-dk:  #C85E80;
+    --sun:       #FFD26B;
+    --sun-lt:    #251C08;
+    --sky:       #1A3A5C;
+    --text:      #D8E8F2;
+    --text-lt:   #7FA0B5;
+    --white:     #FFFFFF;
+    --border:    #243A4E;
+}
+
+[data-theme="dark"] body {
+    background: #0F1923;
+    color: #D8E8F2;
+}
+
+/* ── Header ── */
+[data-theme="dark"] header {
+    background: #0B1520;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.45);
+}
+
+/* ── Nav dropdown menus ── */
+[data-theme="dark"] .dropdown-menu {
+    background: #152031;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.45);
+    border: 1px solid #243A4E;
+}
+[data-theme="dark"] .dropdown-menu a {
+    color: #17A09A;
+}
+[data-theme="dark"] .dropdown-menu a:hover,
+[data-theme="dark"] .dropdown-menu a.active {
+    background: #1A2B3D;
+    color: #FFD26B;
+}
+
+/* ── Mobile nav sidebar ── */
+@media (max-width: 800px) {
+    [data-theme="dark"] nav {
+        background: #0B1520;
+    }
+}
+
+/* ── Cards and white-background panels ── */
+[data-theme="dark"] .card,
+[data-theme="dark"] .info-card,
+[data-theme="dark"] .host-box,
+[data-theme="dark"] .about-card,
+[data-theme="dark"] .rule-card,
+[data-theme="dark"] .contact-block,
+[data-theme="dark"] .booking-card,
+[data-theme="dark"] .faq-question {
+    background: #1A2B3D;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.35);
+}
+[data-theme="dark"] .faq-question:hover { background: #1E3347; }
+[data-theme="dark"] .faq-answer       { background: #0F1923; }
+
+/* ── Sections (hardcoded rgba in base styles — must override explicitly) ── */
+[data-theme="dark"] .section {
+    background: rgba(26, 43, 61, 0.88);
+}
+[data-theme="dark"] .section-alt .inner {
+    background: rgba(21, 32, 49, 0.95);
+}
+[data-theme="dark"] .room-intro {
+    background: rgba(21, 32, 49, 0.97);
+}
+
+/* ── Feat chip — fix near-zero contrast (sea-light bg + sea-deep text) ── */
+[data-theme="dark"] .feat-chip {
+    background: rgba(46, 196, 182, 0.13);
+    color: #17A09A;
+}
+
+/* ── Note box & time slot ── */
+[data-theme="dark"] .note-box {
+    background: #1A1800;
+    border-left-color: #FFD26B;
+    color: #D8E8F2;
+}
+[data-theme="dark"] .time-slot {
+    background: #251C08;
+    color: #FFD26B;
+}
+
+/* ── Booking contact info ── */
+[data-theme="dark"] .booking-contact-info {
+    background: #152031;
+}
+
+/* ── About location table ── */
+[data-theme="dark"] .about-location-table th {
+    background: #152031;
+    border-bottom-color: #243A4E;
+}
+[data-theme="dark"] .about-location-table td {
+    border-bottom-color: #243A4E;
+}
+
+/* ── Page-specific cards (inline <style> blocks in individual pages) ── */
+[data-theme="dark"] .attr-card,
+[data-theme="dark"] .beach-tip-card,
+[data-theme="dark"] .preman-hub-card,
+[data-theme="dark"] .apt-sleep-card,
+[data-theme="dark"] .apt-amen-col {
+    background: #1A2B3D;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.35);
+}
+[data-theme="dark"] .town-card {
+    background: #1A2B3D;
+    border-color: #243A4E;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.35);
+}
+[data-theme="dark"] .apt-amen-col ul li {
+    border-bottom-color: rgba(255,255,255,0.06);
+}
+
+/* ── Info banner ── */
+[data-theme="dark"] .info-banner {
+    background: #1A1800;
+    border-left-color: var(--coral);
+    color: #D8E8F2;
+}
+
+/* ── Photo placeholder ── */
+[data-theme="dark"] .photo-placeholder {
+    background: #0F1F2E;
+    border-color: #2A5A6A;
+    color: #7FA0B5;
+}
+[data-theme="dark"] .photo-placeholder .ph-label { color: #5A8A9A; }
+
+/* ── Footer ── */
+[data-theme="dark"] footer {
+    background: #080F18;
+    color: rgba(216,232,242,0.85);
+}
+[data-theme="dark"] .footer-counter {
+    background: rgba(255,255,255,0.05);
+}
+[data-theme="dark"] .footer-divider {
+    background: rgba(255,255,255,0.1);
+}
+
+/* ── Dark mode toggle button ── */
+.dark-mode-toggle {
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: #ffffff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    padding: 0;
+    margin: 0 2px;
+}
+.dark-mode-toggle:hover {
+    background: rgba(255,255,255,0.28);
+    transform: scale(1.1);
+}
+[data-theme="dark"] .dark-mode-toggle {
+    background: rgba(46,196,182,0.18);
+    color: #FFD26B;
+}
+[data-theme="dark"] .dark-mode-toggle:hover {
+    background: rgba(46,196,182,0.32);
+}
+
+/* Label hidden on desktop, shown in mobile nav */
+.dm-label { display: none; }
+
+@media (max-width: 800px) {
+    .dark-mode-toggle {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0;
+        background: transparent;
+        transform: none;
+    }
+    .dark-mode-toggle:hover {
+        background: rgba(255,255,255,0.2);
+        transform: none;
+    }
+    [data-theme="dark"] .dark-mode-toggle {
+        background: transparent;
+        color: #FFD26B;
+    }
+    [data-theme="dark"] .dark-mode-toggle:hover {
+        background: rgba(255,255,255,0.1);
+    }
+    .dm-label { display: inline; }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -913,6 +1131,8 @@ footer a:hover { text-decoration: underline; }
     }
     .dropdown-menu a { padding-left: 32px; }
     header { padding: 0 20px; }
+    /* Mobile dropdown open state — toggled by JS on first tap */
+    nav li.dropdown.mob-open > .dropdown-menu { display: block; }
 }
 
 @media (max-width: 750px) {
@@ -936,4 +1156,19 @@ footer a:hover { text-decoration: underline; }
     main { padding-top: 60px; }
     .hero { height: calc(100svh - 60px); }
     .hero-mini h1 { font-size: 1.5rem; }
+}
+
+/* ── REVEAL ON SCROLL ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(38px);
+    transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal { transform: none; transition: opacity 0.3s ease; }
 }

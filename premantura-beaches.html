@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rt Kamenjak - Premantura | Vila Sanja</title>
+    <meta name="description" content="Explore the stunning beaches and hidden coves of Rt Kamenjak nature park, just minutes from Vila Sanja in Premantura, Istria.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vila Sanja">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Rt Kamenjak Beaches – Premantura | Vila Sanja">
+    <meta property="og:description" content="Explore the stunning beaches and hidden coves of Rt Kamenjak nature park, just minutes from Vila Sanja in Premantura, Istria.">
+    <meta property="og:image" content="https://vilasanja.com/images/depo/sunset.jpg">
+    <meta property="og:url" content="https://vilasanja.com/premantura-beaches.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rt Kamenjak Beaches – Premantura | Vila Sanja">
+    <meta name="twitter:description" content="Explore the stunning beaches and hidden coves of Rt Kamenjak nature park, just minutes from Vila Sanja in Premantura, Istria.">
+    <meta name="twitter:image" content="https://vilasanja.com/images/depo/sunset.jpg>
     <link rel="icon" type="image/png" href="images/depo/logo.png">
     <link rel="stylesheet" href="styles.css">
+    <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('vs-theme')||'light')}catch(e){}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         /* ── Zig-zag photo + text rows ── */
@@ -173,6 +186,28 @@
             text-decoration: none; margin-top: 14px;
         }
         .bch-map-btn:hover { background: var(--sea); }
+
+        /* ── Bottom CTA buttons ── */
+        .cta-btn-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        @media (max-width: 500px) {
+            .cta-btn-row {
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cta-btn-row .cta-button {
+                text-align: center;
+                box-sizing: border-box;
+            }
+        }
     </style>
 </head>
 <body>
@@ -215,6 +250,9 @@
                     <li><a href="#" class="lang-option" data-lang="hr">HR - Hrvatski</a></li>
                     <li><a href="#" class="lang-option" data-lang="de">DE - Deutsch</a></li>
                 </ul>
+            </li>
+            <li>
+                <button class="dark-mode-toggle" id="dark-mode-btn" aria-label="Switch to dark mode"><i class="fa-solid fa-moon"></i><span class="dm-label">Dark mode</span></button>
             </li>
         </ul>
     </nav>
@@ -503,9 +541,10 @@
             <!-- CTA -->
             <div style="text-align:center;margin-top:40px;">
                 <p data-i18n="bch.cta.p" style="color:var(--text-lt);margin-bottom:16px;">Staying at Vila Sanja puts you just minutes from all of this.</p>
-                <a href="premantura.html" class="cta-button sea" data-i18n="bch.back">Back to Premantura</a>
-                &nbsp;&nbsp;
-                <a href="contact.html" class="cta-button" data-i18n="bch.cta.book">Book your stay &rarr;</a>
+                <div class="cta-btn-row">
+                    <a href="premantura.html" class="cta-button sea" data-i18n="bch.back">Back to Premantura</a>
+                    <a href="contact.html" class="cta-button" data-i18n="bch.cta.book">Book your stay &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
