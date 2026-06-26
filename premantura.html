@@ -239,7 +239,7 @@ document.addEventListener('click', (e) => {
         nav.classList.remove('active');
     }
 });
-document.querySelectorAll('nav a:not(.lang-option):not(.lang-toggle)').forEach(link => {
+document.querySelectorAll('nav a:not(.lang-option):not(.lang-toggle):not(.dropdown-toggle)').forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.classList.remove('active');
         nav.classList.remove('active');
