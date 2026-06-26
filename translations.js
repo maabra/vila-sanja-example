@@ -1775,6 +1775,108 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+/* === SWIPE SUPPORT === */
+function addSwipe(el, onLeft, onRight) {
+  var startX = null, startY = null;
+  el.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+  el.addEventListener('touchend', function(e) {
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    var dy = e.changedTouches[0].clientY - startY;
+    startX = null; startY = null;
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return; /* ignore taps and vertical scrolls */
+    if (dx < 0) onLeft(); else onRight();
+  }, { passive: true });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  /* ── Room gallery ── */
+  var galleryMain = document.querySelector('.gallery-main');
+  if (galleryMain) {
+    addSwipe(
+      galleryMain,
+      function() { var b = document.querySelector('.gallery-arrow.right'); if (b) b.click(); },
+      function() { var b = document.querySelector('.gallery-arrow.left');  if (b) b.click(); }
+    );
+  }
+
+  /* ── Lightbox ── */
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    addSwipe(
+      lightbox,
+      function() { var b = document.getElementById('lbNext'); if (b) b.click(); },
+      function() { var b = document.getElementById('lbPrev'); if (b) b.click(); }
+    );
+  }
+
+  /* ── Index slideshow ── */
+  var slideshowWrap = document.querySelector('.slideshow-wrap');
+  if (slideshowWrap) {
+    addSwipe(
+      slideshowWrap,
+      function() { if (slideshowWrap._slideNext) slideshowWrap._slideNext(); },
+      function() { if (slideshowWrap._slidePrev) slideshowWrap._slidePrev(); }
+    );
+  }
+});
+
+/* === REVEAL ON SCROLL === */
+(function () {
+  const SELECTORS = [
+    '.card', '.info-card', '.about-card', '.rule-card',
+    '.contact-block', '.booking-card', '.host-box',
+    '.attr-card', '.beach-tip-card', '.town-card',
+    '.preman-hub-card', '.apt-sleep-card', '.apt-amen-col',
+    '.about-flex', '.room-intro', '.zigzag-row',
+    '.stats-bar', '.beach-highlight', '.faq-item',
+    '.section-title', '.divider',
+    '.features-bar .feat-chip',
+  ].join(', ');
+
+  function initReveal() {
+    const els = Array.from(document.querySelectorAll(SELECTORS));
+    if (!els.length) return;
+
+    /* stagger siblings that share the same direct parent */
+    const byParent = new Map();
+    els.forEach(el => {
+      const p = el.parentElement;
+      if (!byParent.has(p)) byParent.set(p, []);
+      byParent.get(p).push(el);
+    });
+    byParent.forEach(siblings => {
+      if (siblings.length > 1) {
+        siblings.forEach((el, i) => { el.style.transitionDelay = i * 75 + 'ms'; });
+      }
+    });
+
+    els.forEach(el => el.classList.add('reveal'));
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        el.classList.add('visible');
+        /* clear stagger delay once animation finishes so hover transitions stay snappy */
+        el.addEventListener('transitionend', () => { el.style.transitionDelay = ''; }, { once: true });
+        io.unobserve(el);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -24px 0px' });
+
+    els.forEach(el => io.observe(el));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReveal);
+  } else {
+    initReveal();
+  }
+})();
+
 function updateDarkIcon(btn, theme) {
   const icon  = btn.querySelector('i');
   const label = btn.querySelector('.dm-label');

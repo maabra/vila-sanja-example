@@ -1155,3 +1155,18 @@ footer a:hover { text-decoration: underline; }
     .hero { height: calc(100svh - 60px); }
     .hero-mini h1 { font-size: 1.5rem; }
 }
+
+/* ── REVEAL ON SCROLL ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(38px);
+    transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal { transform: none; transition: opacity 0.3s ease; }
+}
