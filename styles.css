@@ -1131,6 +1131,8 @@ footer a:hover { text-decoration: underline; }
     }
     .dropdown-menu a { padding-left: 32px; }
     header { padding: 0 20px; }
+    /* Mobile dropdown open state — toggled by JS on first tap */
+    nav li.dropdown.mob-open > .dropdown-menu { display: block; }
 }
 
 @media (max-width: 750px) {

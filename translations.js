@@ -1735,14 +1735,14 @@ document.addEventListener('DOMContentLoaded', () => {
     langToggle.addEventListener('click', e => {
       e.preventDefault();
       e.stopPropagation();
-      langMenu.style.display = langMenu.style.display === 'block' ? 'none' : 'block';
+      langLi.classList.toggle('lang-open');
     });
 
     document.querySelectorAll('.lang-option').forEach(opt => {
       opt.addEventListener('click', e => {
         e.preventDefault();
         applyLang(opt.dataset.lang);
-        langMenu.style.display = 'none';
+        langLi.classList.remove('lang-open');
         const mT = document.querySelector('.menu-toggle');
         const mN = document.querySelector('nav');
         if (mT) mT.classList.remove('active');
@@ -1751,7 +1751,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('click', e => {
-      if (!langLi.contains(e.target)) langMenu.style.display = 'none';
+      if (!langLi.contains(e.target)) langLi.classList.remove('lang-open');
     });
   }
 
@@ -1793,6 +1793,37 @@ function addSwipe(el, onLeft, onRight) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  /* ── Mobile nav dropdowns ── */
+  function closeMobDropdowns() {
+    document.querySelectorAll('nav li.dropdown.mob-open').forEach(function(li) {
+      li.classList.remove('mob-open');
+    });
+  }
+
+  document.querySelectorAll('nav li.dropdown > a.dropdown-toggle').forEach(function(toggle) {
+    if (toggle.id === 'lang-current') return; /* lang toggle has its own handler */
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth > 800) return; /* CSS hover handles desktop */
+      var li = toggle.closest('li.dropdown');
+      if (li.classList.contains('mob-open')) {
+        /* second tap → navigate */
+        return;
+      }
+      /* first tap → open submenu, stay on page */
+      e.preventDefault();
+      closeMobDropdowns();
+      li.classList.add('mob-open');
+    });
+  });
+
+  /* Clear mob-open when the sidebar nav closes */
+  var navEl = document.querySelector('nav');
+  if (navEl) {
+    new MutationObserver(function() {
+      if (!navEl.classList.contains('active')) closeMobDropdowns();
+    }).observe(navEl, { attributes: true, attributeFilter: ['class'] });
+  }
+
   /* ── Room gallery ── */
   var galleryMain = document.querySelector('.gallery-main');
   if (galleryMain) {
