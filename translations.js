@@ -1757,4 +1757,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scheduleGuestRatingUpdate();
   observeElfsightRating();
+
+  // Dark mode toggle
+  const savedTheme = localStorage.getItem('vs-theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  const darkBtn = document.getElementById('dark-mode-btn');
+  if (darkBtn) {
+    updateDarkIcon(darkBtn, savedTheme);
+    darkBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('vs-theme', next);
+      updateDarkIcon(darkBtn, next);
+    });
+  }
 });
+
+function updateDarkIcon(btn, theme) {
+  const icon = btn.querySelector('i');
+  if (!icon) return;
+  if (theme === 'dark') {
+    icon.className = 'fa-solid fa-sun';
+    btn.setAttribute('aria-label', 'Switch to light mode');
+  } else {
+    icon.className = 'fa-solid fa-moon';
+    btn.setAttribute('aria-label', 'Switch to dark mode');
+  }
+}
