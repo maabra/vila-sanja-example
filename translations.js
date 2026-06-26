@@ -1776,13 +1776,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function updateDarkIcon(btn, theme) {
-  const icon = btn.querySelector('i');
-  if (!icon) return;
+  const icon  = btn.querySelector('i');
+  const label = btn.querySelector('.dm-label');
   if (theme === 'dark') {
-    icon.className = 'fa-solid fa-sun';
+    if (icon)  icon.className = 'fa-solid fa-sun';
+    if (label) label.textContent = 'Light mode';
     btn.setAttribute('aria-label', 'Switch to light mode');
   } else {
-    icon.className = 'fa-solid fa-moon';
+    if (icon)  icon.className = 'fa-solid fa-moon';
+    if (label) label.textContent = 'Dark mode';
     btn.setAttribute('aria-label', 'Switch to dark mode');
   }
 }

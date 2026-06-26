@@ -29,9 +29,9 @@
     --sand:      #0F1923;
     --sand-mid:  #152031;
     --sand-dark: #1A2B3D;
-    --sea:       #2EC4B6;
-    --sea-deep:  #3DCFC1;
-    --sea-light: #2A5A6A;
+    --sea:       #0D8F89;
+    --sea-deep:  #17A09A;
+    --sea-light: #1A4550;
     --coral:     #E07898;
     --coral-dk:  #C85E80;
     --sun:       #FFD26B;
@@ -61,7 +61,7 @@
     border: 1px solid #243A4E;
 }
 [data-theme="dark"] .dropdown-menu a {
-    color: #3DCFC1;
+    color: #17A09A;
 }
 [data-theme="dark"] .dropdown-menu a:hover,
 [data-theme="dark"] .dropdown-menu a.active {
@@ -105,7 +105,7 @@
 /* ── Feat chip — fix near-zero contrast (sea-light bg + sea-deep text) ── */
 [data-theme="dark"] .feat-chip {
     background: rgba(46, 196, 182, 0.13);
-    color: #3DCFC1;
+    color: #17A09A;
 }
 
 /* ── Note box & time slot ── */
@@ -205,6 +205,37 @@
 }
 [data-theme="dark"] .dark-mode-toggle:hover {
     background: rgba(46,196,182,0.32);
+}
+
+/* Label hidden on desktop, shown in mobile nav */
+.dm-label { display: none; }
+
+@media (max-width: 800px) {
+    .dark-mode-toggle {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0;
+        background: transparent;
+        transform: none;
+    }
+    .dark-mode-toggle:hover {
+        background: rgba(255,255,255,0.2);
+        transform: none;
+    }
+    [data-theme="dark"] .dark-mode-toggle {
+        background: transparent;
+        color: #FFD26B;
+    }
+    [data-theme="dark"] .dark-mode-toggle:hover {
+        background: rgba(255,255,255,0.1);
+    }
+    .dm-label { display: inline; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
