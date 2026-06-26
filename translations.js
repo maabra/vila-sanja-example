@@ -1755,6 +1755,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* Mobile dropdown intercept for Accommodations and Near Us */
+  const navDropdowns = Array.from(document.querySelectorAll('.dropdown-toggle:not(.lang-toggle)')).map(toggle => ({
+    toggle,
+    li: toggle.closest('li.dropdown'),
+    menu: toggle.closest('li.dropdown')?.querySelector('.dropdown-menu'),
+  })).filter(d => d.li && d.menu);
+
+  navDropdowns.forEach(({ toggle, li, menu }) => {
+    toggle.addEventListener('click', e => {
+      if (window.innerWidth > 800) return;
+      const isOpen = menu.style.display === 'block';
+      document.querySelectorAll('.dropdown-menu').forEach(m => { m.style.display = ''; });
+      if (!isOpen) {
+        e.preventDefault();
+        menu.style.display = 'block';
+      }
+    });
+  });
+
+  document.addEventListener('click', e => {
+    navDropdowns.forEach(({ li, menu }) => {
+      if (!li.contains(e.target)) menu.style.display = '';
+    });
+  });
+
   scheduleGuestRatingUpdate();
   observeElfsightRating();
 });
